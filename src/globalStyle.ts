@@ -1,6 +1,11 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, {
+  createGlobalStyle,
+  DefaultTheme,
+  GlobalStyleComponent,
+} from 'styled-components';
+import { animated } from 'react-spring';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
 :root {
 
 /*
@@ -46,15 +51,22 @@ export const GlobalStyle = createGlobalStyle`
 --clr-grey-10: hsl(210, 36%, 96%);
 --clr-white: #fff;
 --clr-black: #222;
+/* 
+* for backgrounds 
+*/
+--clr-bg-1: #343232;
+--clr-bg-2: #252525;
 /*
 * Trinkes 
 */
---transition: all 0.3s linear;
+--slow-transition: all 0.3s linear;
+--fast-transition: all 0.1s linear;
 --spacing: 0.1rem;
 --radius: 0.25rem;
 --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
+--shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+--shadow-click: 5px 10px 10px #000000 inset;
 }
 
 /*
@@ -82,20 +94,29 @@ html, body {
 
 @media screen and (min-width: 280px) {
   :root {
-    font-size: calc(14px + 8 * ((100vw - 280px) / 1640));
+    font-size: calc(14px + 6 * ((100vw - 280px) / 1640));
   }
   p {
-    line-height: calc(19.6px + 11.2 * ((100vw - 280px) / 1640));
+    line-height: calc(19.6px + 8.4 * ((100vw - 280px) / 1640));
   }
 }
 
 @media screen and (min-width: 1920px) {
   :root {
-    font-size: 20px;
+    font-size: calc(20px + 10 * ((100vw - 1920px) / 640));
+  }
+  p {
+    line-height: calc(28px + 14* ((100vw - 1920px) / 640));
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  :root {
+    font-size: 30px;
   }
 
   p {
-    line-height: 28px;
+    line-height: 42px;
   }
 }
 
@@ -135,7 +156,7 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-9);
 }
 
 /*
@@ -146,25 +167,55 @@ p {
 
 #root {
   display: grid;
-  grid:  auto / auto;
-  /* grid-template-areas: Example
-  "navbar" 
-  "main"
-  "footer"
-  ; */
+  grid: 
+  [row1-start] "navbar navbar navbar" 8vh  [row1-end]   
+  [row2-start] "main main main" auto [row2-end]
+  [row3-start] "footer footer footer" clamp(200px, 25vh, 300px) [row3-end]
+  / auto ;
+  row-gap: 20px;
   min-height: 100%;
   background-color: var(--clr-bg-2);
+
+  @media screen and (min-width:1200px) {
+    grid: 
+    [row1-start] "navbar main main" auto  [row1-end]   
+    [row2-start] "navbar main main" auto [row2-end]
+    [row3-start] "navbar footer footer" clamp(200px, 25vh, 300px) [row3-end]
+    / 1.2fr 8.8fr ;
+    
+  }
 }
 `;
 
-export const Container = styled.div`
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1920px;
-  align-items: center;
+export const animDiv = styled(animated.div)``;
 
-  @media screen and (min-width: 900px) {
-    width: 95vw;
+export const MainHeader = styled(animated.header)`
+  width: fit-content;
+  margin-top: 5%;
+  margin-left: 5%;
+
+  & h1 {
+    font-size: 2.65rem;
+    color: var(--clr-grey-10);
+  }
+
+  & hr {
+    border: solid 1px var(--clr-primary-5);
+    margin-bottom: max(80px, 12vh);
+    max-width: 100%;
+  }
+`;
+
+export const Section = styled.section`
+  width: min(1440px, 80%);
+  background-color: var(--clr-bg-1);
+  padding-top: 10%;
+  border-radius: 5px;
+  margin: 0 auto max(80px, 12vh) auto;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 600px) {
+    padding-top: 8%;
   }
 `;
 
