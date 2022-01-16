@@ -34,7 +34,7 @@ const Footer = (): JSX.Element => {
           <S.SocialLink
             className='Footer__SocialLink'
             target='_blank'
-            href='https://www.linkedin.com/in/mairon-romero/'
+            href='https://www.linkedin.com/in/maironromero/'
           >
             <S.FBLink className='SocialLinks__Link' src={linkedin} alt='linkedin Link' />
           </S.SocialLink>

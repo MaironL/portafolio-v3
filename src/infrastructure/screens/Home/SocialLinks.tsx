@@ -15,7 +15,7 @@ const SocialLinks = (): JSX.Element => {
       <S.SocialLink
         className='SocialLinks__SocialLink'
         target='_blank'
-        href='https://www.linkedin.com/in/mairon-romero/'
+        href='https://www.linkedin.com/in/maironromero/'
       >
         <S.Link className='SocialLinks__Link' src={linkedin} alt='linkedin Link' />
       </S.SocialLink>
