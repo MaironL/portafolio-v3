@@ -68,13 +68,10 @@ const About = (): JSX.Element => {
             <hr />
           </Fade>
         </S.SubtitleCont>
-        {/* ------------------------------------------- */}
         <S.JobsCont>
           <Menu categories={categories} filterItems={filterItems} />
           <JobsDesc items={items} />
         </S.JobsCont>
-
-        {/* ------------------------------------------- */}
       </section>
     </S.Cont>
   );

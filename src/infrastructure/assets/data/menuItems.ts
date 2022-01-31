@@ -28,6 +28,13 @@ export const menuItems: menuItemsInterface[] = [
     desc: 'En este proyecto se busca emular las caracteristicas principales de un Shopping Cart, como eliminar un elemento en particular(o todos), o aumentar y dismunir la cantidad de los mismos.',
     link: 'https://shopping-cart-ml.netlify.app/',
   },
+  {
+    title: 'Pomodoro Timer',
+    category: 'REACT.JS',
+    img: require('infrastructure/assets/images/pomodoroTimer.png'),
+    desc: 'Un pequeño contador pomodoro, como ultimo proyecto de la plataforma FreeCodeCamp.',
+    link: 'https://pomodoro-timer-ml.netlify.app/',
+  },
 ];
 
 export default menuItems;
