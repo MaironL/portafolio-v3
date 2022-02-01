@@ -35,7 +35,7 @@ const Home = (): JSX.Element => {
             </S.NamesCont>
           </h1>
           <hr />
-          <h2>Desarrollador Front-End Junior</h2>
+          <h2>Desarrollador Front-End</h2>
         </S.animDivCont>
         <S.animDivCont style={fromBottom}>
           <S.GoToProjects>
