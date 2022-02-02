@@ -10,7 +10,7 @@ export const menuItems: menuItemsInterface[] = [
   {
     title: 'Fylo dark theme landing page',
     category: 'HTML/CSS',
-    img: require('infrastructure/assets/images/FyloDTLP-preview.jpg'),
+    img: require('infrastructure/assets/images/FyloDTLP-preview.png'),
     desc: 'Este es un proyecto de desafio para el reto "Fylo dark theme landing page" de la plataforma Frontend Mentor.',
     link: 'https://fylo-dark-theme-ml.netlify.app/',
   },
