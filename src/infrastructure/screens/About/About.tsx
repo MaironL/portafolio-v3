@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import * as S from './About.style';
 import { skills, SkillsInterface } from 'infrastructure/assets/data';
 import useFilter from './aboutHooks/useFilter';
@@ -9,6 +10,11 @@ import { Fade } from 'react-awesome-reveal';
 const About = (): JSX.Element => {
   const { items, categories, filterItems } = useFilter();
   const { fromLeft } = useAnimation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <S.Cont className='About__Cont'>
       <S.Header className='About__Header' style={fromLeft}>

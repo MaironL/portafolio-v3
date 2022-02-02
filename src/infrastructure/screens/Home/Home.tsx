@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import * as S from './Home.style';
 import SocialLinks from './SocialLinks';
 import useAnimation from 'infrastructure/hook/useAnimation';
@@ -6,6 +7,10 @@ import { Fade } from 'react-awesome-reveal';
 
 const Home = (): JSX.Element => {
   const { fromLeft, fromBottom } = useAnimation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <S.Cont className='Home__Cont'>
       <SocialLinks />

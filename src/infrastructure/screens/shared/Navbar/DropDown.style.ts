@@ -18,18 +18,23 @@ export const DropDownContent: StyledComponent<'div', any, {}, never> = styled.di
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  font-size: 1.5rem;
+  align-items: flex-end;
+  padding-right: 10vw;
   right: 2px;
   top: 100%;
-  width: 75vw;
-  height: 75vh;
-  border-radius: 10px;
+  width: 60vw;
+  height: 50vh;
+  border-radius: 5px;
   z-index: 10;
-  background-color: var(--clr-white);
+  background-color: var(--clr-grey-10);
 
   & .active {
-    text-decoration: underline solid 4px var(--clr-primary-5);
+    text-decoration: underline solid 2px var(--clr-primary-5);
+    text-underline-position: under;
+
+    & svg {
+      color: var(--clr-primary-5);
+    }
   }
 `;
 
@@ -53,11 +58,15 @@ export const DropDownCont: StyledComponent<'div', any, {}, never> = styled.div`
 `;
 
 export const link = styled(NavLink)`
+  display: flex;
+  align-items: center;
   color: var(--clr-grey-2);
+  font-size: 1.3rem;
   font-weight: 500;
   transition: var(--transition);
 
-  &:hover {
-    color: var(--clr-primary-6);
+  & svg {
+    margin-left: 20px;
+    font-size: 1.5rem;
   }
 `;

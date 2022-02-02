@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import * as S from './Contact.style';
 import useFormHook from './contactHooks/useForm';
 import useAnimation from 'infrastructure/hook/useAnimation';
@@ -17,6 +18,10 @@ const Contact = (): JSX.Element => {
     dirty,
   } = useFormHook();
   const { fromLeft } = useAnimation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (state.succeeded) {
     return (

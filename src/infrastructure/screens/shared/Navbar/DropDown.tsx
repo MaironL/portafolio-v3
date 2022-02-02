@@ -10,7 +10,7 @@ const DropDown = (): JSX.Element => {
       {showMenu && (
         <S.DropDownContent className='DropDown__DropDownContent'>
           {navbarLinks.map((link, index) => {
-            const { name, url } = link;
+            const { name, url, icon } = link;
             return (
               <S.link
                 key={index}
@@ -19,6 +19,7 @@ const DropDown = (): JSX.Element => {
                 onClick={() => setShowMenu(false)}
               >
                 {name}
+                {icon}
               </S.link>
             );
           })}

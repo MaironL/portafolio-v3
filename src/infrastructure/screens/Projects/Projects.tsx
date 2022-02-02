@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import * as S from './Projects.style';
 import Menu from './Menu';
 import ListOfItems from './ListOfItems';
@@ -8,6 +9,9 @@ const Projects = (): JSX.Element => {
   const { items, categories, filterItems } = useFilter();
   const { fromLeft } = useAnimation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <S.Cont className='Projects__Cont'>
       <S.Header style={fromLeft} className='Projects__Header'>

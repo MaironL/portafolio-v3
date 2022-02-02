@@ -61,9 +61,14 @@ export const Logo = styled(Link)`
 
 export const LinksCont: StyledComponent<'nav', any, {}, never> = styled.nav`
   display: none;
+  position: relative;
 
   & .active {
     text-decoration: underline solid 2px var(--clr-primary-5);
+    text-underline-position: under;
+    & svg {
+      color: var(--clr-primary-5);
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -73,21 +78,26 @@ export const LinksCont: StyledComponent<'nav', any, {}, never> = styled.nav`
 
   @media screen and (min-width: 1200px) {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 50px;
   }
 `;
 
 export const link = styled(NavLink)`
+  display: flex;
+  align-items: center;
   color: var(--clr-grey-9);
   padding-left: 35px;
   font-weight: 500;
   transition: var(--fast-transition);
 
   &:hover {
-    transform: scale(1.03);
     color: var(--clr-primary-3);
+  }
+
+  & svg {
+    margin-left: 10px;
+    font-size: 1.1rem;
   }
 
   @media screen and (min-width: 1200px) {

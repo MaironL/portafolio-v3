@@ -15,10 +15,11 @@ const Navbar = (): JSX.Element => {
         <DropDown />
         <S.LinksCont className='Navbar__linksCont'>
           {navbarLinks.map((link: navbarLinksInterface, index: number): JSX.Element => {
-            const { name, url } = link;
+            const { name, url, icon } = link;
             return (
               <S.link key={index} to={url} className='Navbar__link'>
                 {name}
+                {icon}
               </S.link>
             );
           })}
