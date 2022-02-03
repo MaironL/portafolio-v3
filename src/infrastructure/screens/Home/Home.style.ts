@@ -32,6 +32,7 @@ export const GreetingCont = styled.div`
 `;
 
 export const Greeting = styled.h4`
+  text-transform: none;
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0;

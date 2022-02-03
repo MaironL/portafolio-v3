@@ -8,7 +8,7 @@ export interface jobsInterface {
 
 export const jobs: jobsInterface[] = [
   {
-    title: 'Desarrollador Front-End Jr.',
+    title: 'Desarrollador Front-End',
     duties: [
       'Desarrollo de screens en multiples proyectos, junto con creacion de formas con sus validaciones mediante el uso de Formik.',
       'Actualizacion del layout de la pagina principal de la empresa para incorporacion de un layout responsivo con CSS Grid.',

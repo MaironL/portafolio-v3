@@ -52,7 +52,7 @@ const Home = (): JSX.Element => {
         <Fade delay={1200}>
           <S.Arrow />
           <S.GreetingCont>
-            <S.Greeting>Se bienvenido</S.Greeting>
+            <S.Greeting>Hola! se bienvenido</S.Greeting>
           </S.GreetingCont>
         </Fade>
         <Fade direction='right'>
