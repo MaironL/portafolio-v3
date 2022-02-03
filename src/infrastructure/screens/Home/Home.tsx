@@ -55,7 +55,7 @@ const Home = (): JSX.Element => {
             <S.Greeting>Hola! se bienvenido</S.Greeting>
           </S.GreetingCont>
         </Fade>
-        <Fade direction='right'>
+        <Fade direction='up'>
           <S.HomeImg src={homeImg} />
         </Fade>
       </S.ImgCont>
