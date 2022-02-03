@@ -6,12 +6,16 @@ export const Cont = styled.main`
   grid-area: main;
   display: grid;
   grid-template-columns: auto 250px auto;
-  grid-template-rows: 30vh 150px 150px auto;
+  grid-template-rows: 30vh 125px 150px auto;
   justify-items: center;
   align-items: end;
   padding: 0 5px 0 max(20px, 5%);
   color: var(--clr-grey-10);
   height: 100vh;
+
+  @media screen and (max-width: 600px) {
+    grid-template-rows: 30vh 250px auto;
+  }
 `;
 
 export const ImgCont = styled.div`
@@ -27,8 +31,12 @@ export const GreetingCont = styled.div`
   padding: 0.8rem 1.3rem;
   border-radius: 30px;
   top: -5.5rem;
-  right: 30%;
+  right: 40%;
   transform: translate(50%, 50%);
+
+  @media screen and (min-width: 600px) {
+    right: 30%;
+  }
 `;
 
 export const Greeting = styled.h4`
@@ -72,6 +80,10 @@ export const Presentation = styled.div`
 
   & hr {
     border: solid 1px var(--clr-primary-5);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-row: 1/3;
   }
 `;
 
