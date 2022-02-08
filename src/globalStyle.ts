@@ -168,9 +168,9 @@ p {
 #root {
   display: grid;
   grid: 
-  [row1-start] "navbar navbar navbar" 8vh  [row1-end]   
-  [row2-start] "main main main" auto [row2-end]
-  [row3-start] "footer footer footer" clamp(200px, 25vh, 300px) [row3-end]
+  [row1-start] "navbar" 8vh  [row1-end]   
+  [row2-start] "main" auto [row2-end]
+  [row3-start] "footer" clamp(200px, 25vh, 300px) [row3-end]
   / auto ;
   row-gap: 20px;
   min-height: 100%;
@@ -178,9 +178,9 @@ p {
 
   @media screen and (min-width:1200px) {
     grid: 
-    [row1-start] "navbar main main" auto  [row1-end]   
-    [row2-start] "navbar main main" auto [row2-end]
-    [row3-start] "navbar footer footer" clamp(200px, 25vh, 300px) [row3-end]
+    [row1-start] "navbar main" auto  [row1-end]   
+    [row2-start] "navbar main" auto [row2-end]
+    [row3-start] "navbar footer" clamp(200px, 25vh, 300px) [row3-end]
     / 1.2fr 8.8fr ;
     
   }

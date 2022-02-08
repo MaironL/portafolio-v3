@@ -15,6 +15,13 @@ export const menuItems: menuItemsInterface[] = [
     link: 'https://fylo-dark-theme-ml.netlify.app/',
   },
   {
+    title: 'blogr landing page main',
+    category: 'HTML/CSS',
+    img: require('infrastructure/assets/images/blogrLandingPageMain.png'),
+    desc: 'Este es un proyecto de desafio para el reto "blogr landing page main" de la plataforma Frontend Mentor, el cual realice mediante el uso de Tailwind',
+    link: 'https://blogr-landing-page-main-ml.netlify.app/',
+  },
+  {
     title: 'Expiration Date Checker',
     category: 'REACT.JS',
     img: require('infrastructure/assets/images/Expiration-date-checker.png'),
