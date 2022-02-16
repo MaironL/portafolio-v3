@@ -22,10 +22,10 @@ export const menuItems: menuItemsInterface[] = [
     link: 'https://blogr-landing-page-main-ml.netlify.app/',
   },
   {
-    title: 'ToDo App',
+    title: 'To Do App',
     category: 'REACT.JS',
     img: require('infrastructure/assets/images/Todo-App.png'),
-    desc: 'Este aplicacion de ToDo contiene todos los elementos de una aplicacion CRUD, cambio de Tema(claro/oscuro) y drag and drop, fue desarrollada con React, Tailwind',
+    desc: 'Este aplicacion de To Do contiene todos los elementos de una aplicacion CRUD, cambio de Tema(claro/oscuro) y drag and drop, fue desarrollada con React, Tailwind',
     link: 'https://todo-ml.netlify.app/',
   },
   {
