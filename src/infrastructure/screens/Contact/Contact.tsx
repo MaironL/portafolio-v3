@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import * as S from './Contact.style';
 import useFormHook from './contactHooks/useForm';
-import useAnimation from 'infrastructure/hook/useAnimation';
 import { Fade } from 'react-awesome-reveal';
 import { msgSend } from 'infrastructure/assets/images';
 
