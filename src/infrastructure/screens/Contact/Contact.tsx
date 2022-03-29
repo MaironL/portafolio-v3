@@ -17,7 +17,6 @@ const Contact = (): JSX.Element => {
     isValid,
     dirty,
   } = useFormHook();
-  const { fromLeft } = useAnimation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
