@@ -29,11 +29,11 @@ export const menuItems: menuItemsInterface[] = [
     link: 'https://todo-ml.netlify.app/',
   },
   {
-    title: 'Pomodoro Timer',
+    title: 'MenuApp',
     category: 'REACT.JS',
-    img: require('infrastructure/assets/images/pomodoroTimer.png'),
-    desc: 'Un pequeño contador pomodoro, como ultimo proyecto de la plataforma FreeCodeCamp, se puede elegir el tiempo de trabajo y descanso, y contiene una alarma al terminar cada sesión.',
-    link: 'https://pomodoro-timer-ml.netlify.app/',
+    img: require('infrastructure/assets/images/menuAppPreview.jpg'),
+    desc: 'Este es un proyecto personal, de una aplicacion para crear menus, hace peticiones a una API externa para buscar platillos, y cuenta con una API personal en Node Express para la autenticacion.',
+    link: 'https://menuapp-ml.netlify.app/',
   },
 ];
 

@@ -36,7 +36,7 @@ const Contact = (): JSX.Element => {
   }
   return (
     <S.Cont className='Contact__Cont'>
-      <S.Header className='Contact__Header' style={fromLeft}>
+      <S.Header className='Contact__Header'>
         <h1>Contacto</h1>
         <hr />
       </S.Header>
