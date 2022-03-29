@@ -32,9 +32,9 @@ const About = (): JSX.Element => {
           <p>
             Constantemente busco aprender nuevas tecnologías y metodologías que me
             permitan desarrollarme en el mundo del desarrollo web, actualmente busco
-            mejorar mis habilidades en el área del desarrollo Front-End, pero no descarto
-            a futuro el tomar una dirección que me permita crear aplicaciones web
-            completas
+            mejorar mis conocimientos a la hora de crear aplicaciones completas con
+            React/NodeJS mediante la creacion de proyectos personales, y sumar dicho
+            conocimiento a mi experiencia laboral previa.
           </p>
           <p>
             Me gusta trabajar en un ambiente colaborativo, ya que, aun siendo autodidacta,
