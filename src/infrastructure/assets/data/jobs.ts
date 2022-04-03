@@ -14,7 +14,7 @@ export const jobs: jobsInterface[] = [
       'Desarrollo de componentes y funcionalidades de forma modular, con el uso de React Hooks.',
       'Actualización de la pagina de la empresa para soporte de responsividad con CSS Grid y Flexbox.',
       'Peticiones a API Rest, y actualización de los  datos en el store de React-Redux.',
-      'Refactorización de CSS y JavaScript.',
+      'Refactorización código de CSS y JavaScript.',
     ],
     dates: 'Mayo 2021 - Enero 2022',
     company: 'Ragnardsoft',
