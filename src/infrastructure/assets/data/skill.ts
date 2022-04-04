@@ -52,6 +52,14 @@ const skills: SkillsInterface[] = [
     name: 'Material Ui',
     img: require('infrastructure/assets/images/materialUILogo.png'),
   },
+  {
+    name: 'Node',
+    img: require('infrastructure/assets/images/node.png'),
+  },
+  {
+    name: 'Express',
+    img: require('infrastructure/assets/images/expressjs.png'),
+  },
 ];
 
 export default skills;

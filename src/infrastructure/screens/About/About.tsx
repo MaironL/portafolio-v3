@@ -57,7 +57,7 @@ const About = (): JSX.Element => {
               {skills.map((skill: SkillsInterface, index: number): JSX.Element => {
                 const { img, name } = skill;
                 return (
-                  <S.Skill key={index} className='About__Skill'>
+                  <S.Skill key={index} className='About__Skill' name={name}>
                     <img src={img} alt={name} />
                     <figcaption>{name}</figcaption>
                   </S.Skill>

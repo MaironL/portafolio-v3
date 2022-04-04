@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { MainHeader, Section, animDiv } from 'globalStyle';
 
 export const Cont = styled.main`
@@ -55,7 +55,11 @@ export const SkillsCont = styled.section`
   max-width: min(500px, 100vw);
 `;
 
-export const Skill = styled.figure`
+interface SkillProps {
+  name: string;
+}
+
+export const Skill = styled.figure<SkillProps>`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -69,8 +73,16 @@ export const Skill = styled.figure`
   border-radius: 50%;
 
   & img {
-    max-height: 50%;
-    width: auto;
+    ${({ name }) =>
+      name === 'Express'
+        ? css`
+            max-width: 100%;
+            height: auto;
+          `
+        : css`
+            max-height: 50%;
+            width: auto;
+          `}
   }
 
   & figcaption {
