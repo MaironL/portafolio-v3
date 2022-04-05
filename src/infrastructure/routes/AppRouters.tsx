@@ -6,10 +6,10 @@ const AppRouters = (): JSX.Element => {
     <Router>
       <C.Navbar />
       <Routes>
-        <Route exact path='/' element={<C.Home />} />
-        <Route exact path='/Projects' element={<C.Projects />} />
-        <Route exact path='/About' element={<C.About />} />
-        <Route exact path='/Contact' element={<C.Contact />} />
+        <Route path='/' element={<C.Home />} />
+        <Route path='/Projects' element={<C.Projects />} />
+        <Route path='/About' element={<C.About />} />
+        <Route path='/Contact' element={<C.Contact />} />
         <Route path='*' element={<C.Error />} />
       </Routes>
       <C.Footer />

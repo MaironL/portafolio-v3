@@ -83,7 +83,7 @@ export const LinksCont: StyledComponent<'nav', any, {}, never> = styled.nav`
   }
 `;
 
-export const link = styled(NavLink)`
+export const navLink = styled(NavLink)`
   display: flex;
   align-items: center;
   color: var(--clr-grey-9);

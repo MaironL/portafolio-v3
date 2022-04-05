@@ -17,10 +17,10 @@ const Navbar = (): JSX.Element => {
           {navbarLinks.map((link: navbarLinksInterface, index: number): JSX.Element => {
             const { name, url, icon } = link;
             return (
-              <S.link key={index} to={url} className='Navbar__link'>
+              <S.navLink key={index} to={url} className='Navbar__link'>
                 {name}
                 {icon}
-              </S.link>
+              </S.navLink>
             );
           })}
         </S.LinksCont>
