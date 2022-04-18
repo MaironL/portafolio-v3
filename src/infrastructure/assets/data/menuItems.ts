@@ -22,11 +22,18 @@ export const menuItems: menuItemsInterface[] = [
     link: 'https://blogr-landing-page-main-ml.netlify.app/',
   },
   {
-    title: 'To Do App',
+    title: 'Todo App',
     category: 'REACT.JS',
     img: require('infrastructure/assets/images/Todo-App.png'),
     desc: 'Este aplicacion de To Do contiene todos los elementos de una aplicacion CRUD, cambio de Tema(claro/oscuro) y drag and drop, fue desarrollada con React, Tailwind',
     link: 'https://todo-ml.netlify.app/',
+  },
+  {
+    title: 'URL Shortener',
+    category: 'REACT.JS',
+    img: require('infrastructure/assets/images/urlShorteningPreview.jpg'),
+    desc: 'Esta aplicacion permite al usuario generar una URL corta, con el fin de poder compartir una URL con sus amigos, fue desarrollada con React, styled components, axios y la API SHRTCODE',
+    link: 'https://link-shortener-ml.netlify.app/',
   },
   {
     title: 'MenuApp',

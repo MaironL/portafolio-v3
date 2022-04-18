@@ -28,6 +28,7 @@ const Footer = (): JSX.Element => {
             className='Footer__SocialLink'
             target='_blank'
             href='https://github.com/MaironL'
+            rel='noopener noreferrer'
           >
             <S.FBLink className='SocialLinks__Link' src={GitHub} alt='GitHub Link' />
           </S.SocialLink>
@@ -35,6 +36,7 @@ const Footer = (): JSX.Element => {
             className='Footer__SocialLink'
             target='_blank'
             href='https://www.linkedin.com/in/maironromero/'
+            rel='noopener noreferrer'
           >
             <S.FBLink className='SocialLinks__Link' src={linkedin} alt='linkedin Link' />
           </S.SocialLink>

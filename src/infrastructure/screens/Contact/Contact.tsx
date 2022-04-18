@@ -3,8 +3,10 @@ import * as S from './Contact.style';
 import useFormHook from './contactHooks/useForm';
 import { Fade } from 'react-awesome-reveal';
 import { msgSend } from 'infrastructure/assets/images';
+import useAnimation from 'infrastructure/hook/useAnimation';
 
 const Contact = (): JSX.Element => {
+  const { fromLeft } = useAnimation();
   const {
     handleSubmit,
     state,
@@ -34,7 +36,7 @@ const Contact = (): JSX.Element => {
   }
   return (
     <S.Cont className='Contact__Cont'>
-      <S.Header className='Contact__Header'>
+      <S.Header className='Contact__Header' style={fromLeft}>
         <h1>Contacto</h1>
         <hr />
       </S.Header>
