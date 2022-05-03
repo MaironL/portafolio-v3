@@ -25,7 +25,7 @@ export const menuItems: menuItemsInterface[] = [
     title: 'Todo App',
     category: 'REACT.JS',
     img: require('infrastructure/assets/images/Todo-App.png'),
-    desc: 'Este aplicacion de To Do contiene todos los elementos de una aplicacion CRUD, cambio de Tema(claro/oscuro) y drag and drop, fue desarrollada con React, Tailwind',
+    desc: 'Esta aplicacion es el clasico Todo, pero con Tema(claro/oscuro), drag and drop, fue desarrollada con React, Tailwind. Aparte de esto, desarrolle una API REST con Node, Express, MongoDB y Mongoose, para una Authentication con JWT mediante uso de access token, refresh token, y autorizacion por roles',
     link: 'https://todo-ml.netlify.app/',
   },
   {
