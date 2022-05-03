@@ -6,7 +6,7 @@ export const Cont = styled.main`
   grid-area: main;
   display: grid;
   grid-template-columns: auto 250px auto;
-  grid-template-rows: 30vh 125px 150px auto;
+  grid-template-rows: 25vh 125px 150px auto;
   justify-items: center;
   align-items: end;
   padding: 0 5px 0 max(20px, 5%);
@@ -16,12 +16,20 @@ export const Cont = styled.main`
   @media screen and (max-width: 600px) {
     grid-template-rows: 30vh 250px auto;
   }
+
+  @media screen and (min-width: 600px) and (max-height: 650px) {
+    align-items: start;
+  }
 `;
 
 export const ImgCont = styled.div`
   grid-row: 3/5;
   grid-column: 2/4;
   position: relative;
+
+  @media screen and (min-width: 600px) and (max-height: 650px) {
+    display: none;
+  }
 `;
 
 export const GreetingCont = styled.div`
