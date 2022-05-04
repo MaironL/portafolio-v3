@@ -1,14 +1,14 @@
 import * as S from './JobsDesc.style';
-import { jobsInterface } from 'infrastructure/assets/data';
+import { Jobs } from 'infrastructure/assets/data';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import { Fade } from 'react-awesome-reveal';
 
-interface JobsPropInterface {
-  items: jobsInterface[];
+interface JobsDescProp {
+  jobsFiltered: Jobs[];
 }
 
-const JobsDesc = ({ items }: JobsPropInterface): JSX.Element => {
-  const { title, company, dates, duties } = items[0];
+const JobsDesc = ({ jobsFiltered }: JobsDescProp) => {
+  const { title, company, dates, duties } = jobsFiltered[0];
   return (
     <S.Cont>
       <Fade cascade damping={0.3} triggerOnce>

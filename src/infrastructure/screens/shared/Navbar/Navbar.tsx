@@ -1,23 +1,23 @@
 import { MaiLogo } from 'infrastructure/assets/images';
-import { navbarLinks, navbarLinksInterface } from 'infrastructure/assets/data';
-import DropDown from './DropDown';
+import { navbarLinksList } from 'infrastructure/assets/data';
+import { DropDown } from 'infrastructure/components';
 import * as S from './Navbar.style';
 
-const Navbar = (): JSX.Element => {
+const Navbar = () => {
   return (
-    <S.Cont className='Navbar__Cont'>
-      <S.Navbar className='Navbar__Navbar'>
-        <S.LogoCont className='Navbar__LogoCont'>
-          <S.Logo to='/' className='Navbar__logo'>
+    <S.Cont>
+      <S.Navbar>
+        <S.LogoCont>
+          <S.Logo to='/'>
             <img src={MaiLogo} alt='Page Logo' />
           </S.Logo>
         </S.LogoCont>
         <DropDown />
-        <S.LinksCont className='Navbar__linksCont'>
-          {navbarLinks.map((link: navbarLinksInterface, index: number): JSX.Element => {
+        <S.LinksCont>
+          {navbarLinksList.map((link, index: number) => {
             const { name, url, icon } = link;
             return (
-              <S.navLink key={index} to={url} className='Navbar__link'>
+              <S.navLink key={index} to={url}>
                 {name}
                 {icon}
               </S.navLink>

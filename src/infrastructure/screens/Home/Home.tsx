@@ -1,19 +1,21 @@
 import { useEffect } from 'react';
 import * as S from './Home.style';
-import SocialLinks from './SocialLinks';
+import { SocialLinks } from 'infrastructure/components';
+import { homeIlust } from 'infrastructure/assets/images';
+import { socialLinksList } from 'infrastructure/assets/data';
 import useAnimation from 'infrastructure/hook/useAnimation';
-import { homeImg } from 'infrastructure/assets/images';
 import { Fade } from 'react-awesome-reveal';
 
-const Home = (): JSX.Element => {
+const Home = () => {
   const { fromLeft, fromBottom } = useAnimation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <S.Cont className='Home__Cont'>
-      <SocialLinks />
+    <S.Cont>
+      <SocialLinks links={socialLinksList} />
       <S.Presentation>
         <S.animDivCont style={fromLeft}>
           <h1>
@@ -56,7 +58,7 @@ const Home = (): JSX.Element => {
           </S.GreetingCont>
         </Fade>
         <Fade direction='up' triggerOnce>
-          <S.HomeImg src={homeImg} />
+          <S.HomeImg src={homeIlust} />
         </Fade>
       </S.ImgCont>
     </S.Cont>

@@ -1,4 +1,4 @@
-export interface jobsInterface {
+export interface Jobs {
   title: string;
   duties: string[];
   dates: string;
@@ -6,7 +6,7 @@ export interface jobsInterface {
   id: string | number;
 }
 
-export const jobs: jobsInterface[] = [
+export const jobsList: Jobs[] = [
   {
     title: 'Desarrollador Front-End',
     duties: [
@@ -22,4 +22,4 @@ export const jobs: jobsInterface[] = [
   },
 ];
 
-export default jobs;
+export default jobsList;

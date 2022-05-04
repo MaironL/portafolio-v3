@@ -2,22 +2,13 @@ import { useEffect } from 'react';
 import * as S from './Contact.style';
 import useFormHook from './contactHooks/useForm';
 import { Fade } from 'react-awesome-reveal';
-import { msgSend } from 'infrastructure/assets/images';
+import { msgSendIlust } from 'infrastructure/assets/images';
 import useAnimation from 'infrastructure/hook/useAnimation';
 
-const Contact = (): JSX.Element => {
+const Contact = () => {
   const { fromLeft } = useAnimation();
-  const {
-    handleSubmit,
-    state,
-    handleChange,
-    values,
-    handleBlur,
-    touched,
-    errors,
-    isValid,
-    dirty,
-  } = useFormHook();
+  const { handleSubmit, state, handleChange, values, handleBlur, touched, errors, isValid, dirty } =
+    useFormHook();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,25 +20,19 @@ const Contact = (): JSX.Element => {
         <S.ConfirmCont>
           <S.ConfirmTitle>Gracias por escribir</S.ConfirmTitle>
           <S.ConfirmMsg>estare en contacto contigo pronto</S.ConfirmMsg>
-          <S.ConfirmImg src={msgSend} />
+          <S.ConfirmImg src={msgSendIlust} />
         </S.ConfirmCont>
       </S.Cont>
     );
   }
   return (
-    <S.Cont className='Contact__Cont'>
-      <S.Header className='Contact__Header' style={fromLeft}>
+    <S.Cont>
+      <S.Header style={fromLeft}>
         <h1>Contacto</h1>
         <hr />
       </S.Header>
-      <S.Form className='Contact__Form' onSubmit={handleSubmit}>
-        <Fade
-          cascade
-          damping={0.5}
-          triggerOnce
-          direction='down'
-          style={{ display: 'flex' }}
-        >
+      <S.Form onSubmit={handleSubmit}>
+        <Fade cascade damping={0.5} triggerOnce direction='down' style={{ display: 'flex' }}>
           <S.Field>
             <S.Input
               type='text'

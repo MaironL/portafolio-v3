@@ -1,11 +1,7 @@
-import styled, {
-  createGlobalStyle,
-  DefaultTheme,
-  GlobalStyleComponent,
-} from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { animated } from 'react-spring';
 
-export const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 :root {
 
 /*
@@ -181,7 +177,7 @@ p {
     [row1-start] "navbar main" auto  [row1-end]   
     [row2-start] "navbar main" auto [row2-end]
     [row3-start] "navbar footer" clamp(200px, 25vh, 300px) [row3-end]
-    / 1.2fr 8.8fr ;
+    / 130px auto ;
     
   }
 }

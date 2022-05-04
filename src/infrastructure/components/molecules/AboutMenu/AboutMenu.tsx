@@ -1,19 +1,19 @@
-import * as S from './Menu.style';
+import * as S from './AboutMenu.style';
 
 interface menuPropInterface {
-  filterItems: (category: string) => void;
+  jobsFilter: (category: string) => void;
   categories: string[];
 }
 
-const Menu = ({ filterItems, categories }: menuPropInterface): JSX.Element => {
+const Menu = ({ jobsFilter, categories }: menuPropInterface) => {
   return (
     <S.Cont className='Menu__Cont'>
-      {categories.map((category: string, index: number): JSX.Element => {
+      {categories.map((category, index: number) => {
         return (
           <S.CategoryButtom
             type='button'
             key={index}
-            onClick={(): void => filterItems(category)}
+            onClick={() => jobsFilter(category)}
             className='Menu__CategoryButtom'
           >
             {category}

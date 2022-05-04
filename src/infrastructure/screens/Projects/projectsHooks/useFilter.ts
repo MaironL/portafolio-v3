@@ -1,33 +1,23 @@
 import { useState } from 'react';
-import { menuItemsInterface, menuItems } from 'infrastructure/assets/data';
+import { ProjectsList } from 'infrastructure/assets/data';
 
 //* Implementation logic
-interface useFilterInterface {
-  items: menuItemsInterface[];
-  categories: string[];
-  filterItems: (category: string) => void;
-}
 
-const useFilter = (): useFilterInterface => {
-  const [items, setItems] = useState<menuItemsInterface[]>(menuItems);
+const useFilter = () => {
+  const [projectsFiltered, setprojects] = useState(ProjectsList);
 
-  const categories = [
-    'TODOS',
-    ...new Set(menuItems.map((item: menuItemsInterface): string => item.category)),
-  ];
+  const categories = ['TODOS', ...new Set(ProjectsList.map((project) => project.category))];
 
-  const filterItems = (category: string): void => {
+  const projectsFilter = (category: string): void => {
     if (category === 'TODOS') {
-      setItems(menuItems);
+      setprojects(ProjectsList);
     } else {
-      const newItems = menuItems.filter(
-        (item: menuItemsInterface): boolean => item.category === category
-      );
-      setItems(newItems);
+      const newItems = ProjectsList.filter((project) => project.category === category);
+      setprojects(newItems);
     }
   };
 
-  return { items, categories, filterItems };
+  return { projectsFiltered, categories, projectsFilter };
 };
 
 export default useFilter;

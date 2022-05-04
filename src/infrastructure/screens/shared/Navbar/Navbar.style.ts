@@ -1,26 +1,26 @@
-import styled, { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
-export const Cont: StyledComponent<'nav', any, {}, never> = styled.nav`
+export const Cont = styled.nav`
   grid-area: navbar;
-  position: fixed;
-  z-index: 10;
-  height: 8.4%;
-  max-height: 80px;
-  min-height: 42px;
-  width: 100%;
+  /* position: fixed; */
+  /* z-index: 10; */
+  /* height: 8.4%; */
+  /* max-height: 80px; */
+  /* min-height: 42px; */
+  /* width: 100%; */
   background-color: var(--clr-bg-1);
 
   @media screen and (min-width: 1200px) {
     height: 100%;
-    max-width: 12vw;
+    max-width: 10vw;
     max-height: none;
     min-height: none;
     border-right: solid 3px var(--clr-bg-2);
   }
 `;
 
-export const Navbar: StyledComponent<'div', any, {}, never> = styled.div`
+export const Navbar = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ export const Navbar: StyledComponent<'div', any, {}, never> = styled.div`
   }
 `;
 
-export const LogoCont: StyledComponent<'div', any, {}, never> = styled.div`
+export const LogoCont = styled.div`
   height: 100%;
 
   @media screen and (min-width: 1200px) {
@@ -49,17 +49,20 @@ export const LogoCont: StyledComponent<'div', any, {}, never> = styled.div`
 export const Logo = styled(Link)`
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
 
   & img {
     display: block;
-    height: 80%;
-    max-height: 50px;
-    max-width: auto;
+    max-width: 60%;
+    height: auto;
+    image-rendering: crisp-edges;
+    /*image-rendering: crisp-edges;*/
+    /* image-rendering: -webkit-optimize-contrast; */
   }
 `;
 
-export const LinksCont: StyledComponent<'nav', any, {}, never> = styled.nav`
+export const LinksCont = styled.nav`
   display: none;
   position: relative;
 

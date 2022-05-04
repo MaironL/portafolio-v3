@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import * as S from './DropDown.style';
-import { navbarLinks } from 'infrastructure/assets/data';
+import { navbarLinksList, NavbarLinks } from 'infrastructure/assets/data';
 
 const DropDown = (): JSX.Element => {
   const [showMenu, setShowMenu] = useState(false);
@@ -9,7 +9,7 @@ const DropDown = (): JSX.Element => {
       <S.DropDown className='DropDown__DropDown' onClick={() => setShowMenu(!showMenu)} />
       {showMenu && (
         <S.DropDownContent className='DropDown__DropDownContent'>
-          {navbarLinks.map((link, index) => {
+          {navbarLinksList.map((link: NavbarLinks, index: number) => {
             const { name, url, icon } = link;
             return (
               <S.link

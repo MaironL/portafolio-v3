@@ -1,29 +1,17 @@
 import { useState } from 'react';
-import { jobsInterface, jobs } from 'infrastructure/assets/data';
+import { jobsList } from 'infrastructure/assets/data';
 
-//* Implementation logic
-interface useFilterInterface {
-  items: jobsInterface[];
-  categories: string[];
-  filterItems: (company: string) => void;
-}
+const useFilter = () => {
+  const [jobsFiltered, setJobs] = useState(jobsList);
 
-const useFilter = (): useFilterInterface => {
-  const [items, setItems] = useState<jobsInterface[]>(jobs);
+  const categories = [...new Set(jobsList.map((item) => item.company))];
 
-  const categories = [
-    ...new Set(jobs.map((item: jobsInterface): string => item.company)),
-  ];
-
-  const filterItems = (company: string): void => {
-    const newItems = jobs.filter(
-      (item: jobsInterface): boolean => item.company === company
-    );
-
-    setItems(newItems);
+  const jobsFilter = (company: string) => {
+    const newItems = jobsList.filter((item) => item.company === company);
+    setJobs(newItems);
   };
 
-  return { items, categories, filterItems };
+  return { jobsFiltered, categories, jobsFilter };
 };
 
 export default useFilter;
