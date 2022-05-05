@@ -1,14 +1,21 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { animated } from 'react-spring';
 
-export const GlobalStyle = createGlobalStyle`
-:root {
+const GlobalStyle = createGlobalStyle`
 
+:root {
+  
 /*
 * =============== 
 * Variables
 * ===============
 */
+
+/*
+* Logo Orange
+*/
+--clr-logo-orange: hsl(32, 51%, 48%);
+--clr-logo-bg: 	hsl(0, 0%, 8%);
 
 /*
 * Dark shades of primary color 
@@ -46,21 +53,23 @@ export const GlobalStyle = createGlobalStyle`
 --clr-grey-9: hsl(212, 33%, 89%);
 --clr-grey-10: hsl(210, 36%, 96%);
 --clr-white: #fff;
---clr-black: #222;
+--clr-black: #202020;
 /* 
 * for backgrounds 
 */
 --clr-bg-1: #343232;
---clr-bg-2: #252525;
+--clr-bg-2: #282828;
 /*
 * Trinkes 
 */
+--clr-util-grey: hsl(0, 0%, 34%);
 --slow-transition: all 0.3s linear;
 --fast-transition: all 0.1s linear;
 --spacing: 0.1rem;
 --radius: 0.25rem;
 --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--grey-shadow: -1px 0.5px 1px hsl(0, 0%, 34%);
 --shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 --shadow-click: 5px 10px 10px #000000 inset;
 }
@@ -90,29 +99,29 @@ html, body {
 
 @media screen and (min-width: 280px) {
   :root {
-    font-size: calc(14px + 6 * ((100vw - 280px) / 1640));
+    font-size: calc(14px + 2.6 * ((100vw - 280px) / 1640));
   }
   p {
-    line-height: calc(19.6px + 8.4 * ((100vw - 280px) / 1640));
+    line-height: calc(19.6px + 5 * ((100vw - 280px) / 1640));
   }
 }
 
 @media screen and (min-width: 1920px) {
   :root {
-    font-size: calc(20px + 10 * ((100vw - 1920px) / 640));
+    font-size: calc(16.6px + 7.4 * ((100vw - 1920px) / 640));
   }
   p {
-    line-height: calc(28px + 14* ((100vw - 1920px) / 640));
+    line-height: calc(24.6px + 11.4 * ((100vw - 1920px) / 640));
   }
 }
 
 @media screen and (min-width: 2560px) {
   :root {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   p {
-    line-height: 42px;
+    line-height: 36px;
   }
 }
 
@@ -164,20 +173,18 @@ p {
 #root {
   display: grid;
   grid: 
-  [row1-start] "navbar" 8vh  [row1-end]   
+  [row1-start] "navbar" 10vh  [row1-end]   
   [row2-start] "main" auto [row2-end]
-  [row3-start] "footer" clamp(200px, 25vh, 300px) [row3-end]
   / auto ;
-  row-gap: 20px;
+  /* row-gap: 20px; */
   min-height: 100%;
   background-color: var(--clr-bg-2);
 
   @media screen and (min-width:1200px) {
     grid: 
-    [row1-start] "navbar main" auto  [row1-end]   
-    [row2-start] "navbar main" auto [row2-end]
-    [row3-start] "navbar footer" clamp(200px, 25vh, 300px) [row3-end]
-    / 130px auto ;
+    [row1-start] "navbar main" 50vh  [row1-end]   
+    [row2-start] "navbar main" 50vh [row2-end]
+    / 120px auto ;
     
   }
 }

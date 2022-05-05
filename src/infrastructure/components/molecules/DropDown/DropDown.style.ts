@@ -1,72 +1,74 @@
-import styled, { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { FaAlignRight } from 'react-icons/fa';
-import { IconType } from 'react-icons';
 
-export const DropDown: StyledComponent<IconType, any, {}, never> = styled(FaAlignRight)`
-  color: var(--clr-primary-4);
-  font-size: 2.2rem;
+interface DropDownContentProps {
+  show: boolean;
+}
 
-  &:hover {
-    color: var(--clr-primary-5);
-    cursor: pointer;
-  }
-`;
-
-export const DropDownContent: StyledComponent<'div', any, {}, never> = styled.div`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding-right: 10vw;
-  right: 2px;
-  top: 100%;
-  width: 60vw;
-  height: 50vh;
-  border-radius: 5px;
-  z-index: 10;
-  background-color: var(--clr-grey-10);
-
-  & .active {
-    text-decoration: underline solid 2px var(--clr-primary-5);
-    text-underline-position: under;
-
-    & svg {
-      color: var(--clr-primary-5);
-    }
-  }
-`;
-
-export const DropDownFocus: StyledComponent<'div', any, {}, never> = styled.div`
-  background-color: hsl(0, 0%, 0%, 90%);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-`;
-
-export const DropDownCont: StyledComponent<'div', any, {}, never> = styled.div`
+export const DropDownCont = styled.div`
   display: flex;
   align-items: center;
-  padding-bottom: 0.8%;
 
   @media screen and (min-width: 600px) {
     display: none;
   }
 `;
 
+export const DropDown = styled(FaAlignRight)<DropDownContentProps>`
+  color: ${({ show }) => (show ? 'var(--clr-logo-orange)' : 'var(--clr-primary-5)')};
+  font-size: 36px;
+  margin-right: 20px;
+  transition: var(--fast-transition);
+  z-index: 50;
+
+  &:hover {
+    color: var(--clr-logo-orange);
+    cursor: pointer;
+  }
+`;
+
+export const DropDownContent = styled.div<DropDownContentProps>`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  top: 0px;
+  width: 62vw;
+  height: 100vh;
+  z-index: 10;
+  transform: ${({ show }) => (show === true ? 'translateX(0)' : 'translateX(100%)')};
+  box-shadow: -1px 0px 1px var(--clr-util-grey);
+  background-color: var(--clr-black);
+  transition: var(--fast-transition);
+
+  & .active {
+    box-shadow: 0px 0px 5px var(--clr-logo-orange);
+    color: var(--clr-logo-orange);
+  }
+`;
+
 export const link = styled(NavLink)`
   display: flex;
   align-items: center;
-  color: var(--clr-grey-2);
+  justify-content: center;
+  padding: 20px 0px;
+  width: 100%;
+  color: var(--clr-grey-9);
   font-size: 1.3rem;
   font-weight: 500;
+  box-shadow: 0px -0.5px 1px var(--clr-util-grey), -1px 0.5px 1px var(--clr-util-grey);
   transition: var(--transition);
+`;
 
-  & svg {
-    margin-left: 20px;
-    font-size: 1.5rem;
-  }
+export const DropDownFocus = styled.div<DropDownContentProps>`
+  background-color: ${({ show }) => (show ? 'hsl(0, 0%, 0%, 10%)' : 'none')};
+  backdrop-filter: ${({ show }) => (show ? 'blur(5px)' : 'none')};
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 `;

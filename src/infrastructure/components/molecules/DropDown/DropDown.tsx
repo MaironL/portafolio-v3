@@ -1,31 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as S from './DropDown.style';
 import { navbarLinksList, NavbarLinks } from 'infrastructure/assets/data';
 
 const DropDown = (): JSX.Element => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [show, setShow] = useState(false);
+
   return (
-    <S.DropDownCont className='DropDown__DropDownCont'>
-      <S.DropDown className='DropDown__DropDown' onClick={() => setShowMenu(!showMenu)} />
-      {showMenu && (
-        <S.DropDownContent className='DropDown__DropDownContent'>
-          {navbarLinksList.map((link: NavbarLinks, index: number) => {
-            const { name, url, icon } = link;
-            return (
-              <S.link
-                key={index}
-                to={url}
-                className='Navbar__link'
-                onClick={() => setShowMenu(false)}
-              >
-                {name}
-                {icon}
-              </S.link>
-            );
-          })}
-        </S.DropDownContent>
-      )}
-      {showMenu && <S.DropDownFocus onClick={() => setShowMenu(false)} />}
+    <S.DropDownCont tabIndex={-1}>
+      <S.DropDown onClick={() => setShow(!show)} show={show} />
+      <S.DropDownContent show={show}>
+        {navbarLinksList.map((link: NavbarLinks, index: number) => {
+          const { name, url, icon } = link;
+          return (
+            <S.link key={index} to={url} className='Navbar__link' onClick={() => setShow(false)}>
+              {name}
+            </S.link>
+          );
+        })}
+      </S.DropDownContent>
+      <S.DropDownFocus onClick={() => setShow(false)} show={show} />
     </S.DropDownCont>
   );
 };

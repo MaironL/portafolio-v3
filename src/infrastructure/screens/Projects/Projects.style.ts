@@ -5,6 +5,7 @@ export const Header = styled(MainHeader)``;
 
 export const Cont = styled.main`
   grid-area: main;
+  overflow-y: auto;
 `;
 
 export const ItemsCont = styled(Section)``;

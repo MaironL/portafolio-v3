@@ -12,7 +12,6 @@ const AppRouters = (): JSX.Element => {
         <Route path='/Contact' element={<C.Contact />} />
         <Route path='*' element={<C.Error />} />
       </Routes>
-      <C.Footer />
     </Router>
   );
 };

@@ -3,7 +3,7 @@ import { MainHeader } from 'globalStyle';
 
 export const Cont = styled.main`
   grid-area: main;
-  min-height: 100vh;
+  overflow-y: auto;
 `;
 
 export const Header = styled(MainHeader)``;
@@ -72,8 +72,7 @@ export const Input = styled.input<ValProps>`
   font-size: 1rem;
   width: 100%;
   border-right: ${(props) => (props.Error ? '4px solid rgba(240, 52, 43, 0.8)' : null)};
-  box-shadow: ${(props) =>
-    props.Error ? '-4px 5px 12px -3px rgba(240, 52, 43, 0.3)' : null};
+  box-shadow: ${(props) => (props.Error ? '-4px 5px 12px -3px rgba(240, 52, 43, 0.3)' : null)};
 
   &:focus {
     &::placeholder {
@@ -86,8 +85,8 @@ export const Input = styled.input<ValProps>`
     font-size: 1rem;
     font-weight: 600;
     color: var(--clr-grey-4);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
 
@@ -126,8 +125,7 @@ export const TextArea = styled.textarea<ValProps>`
   font-size: 1rem;
   width: 100%;
   border-right: ${(props) => (props.Error ? '4px solid rgba(240, 52, 43, 0.8)' : null)};
-  box-shadow: ${(props) =>
-    props.Error ? '-4px 5px 12px -3px rgba(240, 52, 43, 0.3)' : null};
+  box-shadow: ${(props) => (props.Error ? '-4px 5px 12px -3px rgba(240, 52, 43, 0.3)' : null)};
 
   &:focus {
     &::placeholder {
@@ -140,14 +138,14 @@ export const TextArea = styled.textarea<ValProps>`
     font-size: 1rem;
     font-weight: 600;
     color: var(--clr-grey-4);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
 
 export const Submit = styled.button`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   margin: 0 auto 20px auto;
@@ -160,8 +158,7 @@ export const Submit = styled.button`
     props.disabled ? 'var(--clr-grey-4)' : 'var(--clr-primary-5)'};
 
   &:hover {
-    color: ${(props: any): any =>
-      props.disabled ? 'var(--clr-grey-2)' : 'var(--clr-grey-1)'};
+    color: ${(props: any): any => (props.disabled ? 'var(--clr-grey-2)' : 'var(--clr-grey-1)')};
     background-color: ${(props: any): any =>
       props.disabled ? 'var(--clr-grey-4)' : 'var(--clr-primary-6)'};
   }

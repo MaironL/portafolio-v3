@@ -3,8 +3,8 @@ import { MainHeader, Section, animDiv } from 'globalStyle';
 
 export const Cont = styled.main`
   grid-area: main;
-  min-height: 100vh;
   position: relative;
+  overflow-y: auto;
 `;
 
 export const Header = styled(MainHeader)``;
