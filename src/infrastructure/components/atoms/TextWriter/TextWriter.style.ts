@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Cont = styled.div`
   display: inline-flex;
+  width: 100%;
 `;
 
 export const staticText = styled.div`
@@ -12,7 +13,6 @@ export const staticText = styled.div`
   line-height: 35px;
 
   @media screen and (min-width: 600px) {
-    width: auto;
     font-size: 1.2rem;
   }
 
@@ -23,11 +23,11 @@ export const staticText = styled.div`
 
 export const dynamicTextList = styled.ul`
   margin-left: 5px;
+  width: 100%;
   height: 35px;
   overflow: hidden;
 
   @media screen and (min-width: 600px) {
-    width: auto;
     height: 1.9rem;
   }
 
@@ -44,7 +44,6 @@ export const dynamicTextWord = styled.li`
   top: 0;
 
   @media screen and (min-width: 600px) {
-    width: auto;
     font-size: 1.2rem;
   }
 
@@ -52,7 +51,7 @@ export const dynamicTextWord = styled.li`
     font-size: 1.3rem;
   }
 
-  animation: textSlide 12.5s steps(5) infinite;
+  animation: textSlide 30s steps(5) infinite;
   @keyframes textSlide {
     100% {
       top: -175px;
@@ -69,16 +68,26 @@ export const dynamicText = styled.span`
     position: absolute;
     left: 0;
     bottom: -5px;
-    height: 30px;
+    height: 28px;
     width: 100%;
     background-color: var(--clr-bg-2);
     border-left: 2px solid var(--clr-primary-5);
-    animation: textTyping 2.5s steps(38) infinite;
+    animation: textTyping 6s steps(40) infinite;
 
     @keyframes textTyping {
-      100% {
+      50% {
         left: 100%;
         margin: 0 -35px 0 35px;
+      }
+
+      75% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        border-left: 2px solid var(--clr-primary-5);
+      }
+
+      100% {
+        border-left: 20px solid var(--clr-logo-orange);
       }
     }
   }
