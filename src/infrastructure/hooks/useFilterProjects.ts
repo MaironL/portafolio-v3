@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { ProjectsList } from 'infrastructure/assets/data';
 
-//* Implementation logic
-
-const useFilter = () => {
+const useFilterProjects = () => {
   const [projectsFiltered, setprojects] = useState(ProjectsList);
 
-  const categories = ['TODOS', ...new Set(ProjectsList.map((project) => project.category))];
+  const projectsCategories = ['TODOS', ...new Set(ProjectsList.map((project) => project.category))];
 
   const projectsFilter = (category: string): void => {
     if (category === 'TODOS') {
@@ -17,7 +15,7 @@ const useFilter = () => {
     }
   };
 
-  return { projectsFiltered, categories, projectsFilter };
+  return { projectsFiltered, projectsCategories, projectsFilter };
 };
 
-export default useFilter;
+export default useFilterProjects;

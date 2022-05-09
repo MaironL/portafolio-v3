@@ -145,7 +145,7 @@ export const LinkNav = styled(NavLink)`
   align-items: center;
   justify-content: center;
   color: var(--clr-grey-9);
-  padding: 0 20px;
+  padding: 0 15px;
   font-size: 14px;
   transition: var(--fast-transition);
 

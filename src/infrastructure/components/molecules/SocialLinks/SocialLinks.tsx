@@ -1,17 +1,10 @@
 import * as S from './SocialLinks.style';
+import { socialLinksList } from 'infrastructure/assets/data';
 
-interface ISocialLinks {
-  links: {
-    href: string;
-    src: string;
-    alt: string;
-  }[];
-}
-
-const SocialLinks = ({ links }: ISocialLinks): JSX.Element => {
+const SocialLinks = () => {
   return (
     <S.SocialCont className='SocialLinks__SocialCont'>
-      {links.map((link, index: number) => {
+      {socialLinksList.map((link, index: number) => {
         return (
           <S.SocialLink
             className='SocialLinks__SocialLink'
@@ -23,6 +16,7 @@ const SocialLinks = ({ links }: ISocialLinks): JSX.Element => {
           </S.SocialLink>
         );
       })}
+      <S.VerticalLine />
     </S.SocialCont>
   );
 };

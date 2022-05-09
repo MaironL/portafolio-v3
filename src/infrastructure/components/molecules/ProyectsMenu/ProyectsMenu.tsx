@@ -2,13 +2,13 @@ import * as S from './ProyectsMenu.style';
 
 interface menuPropInterface {
   projectsFilter: (category: string) => void;
-  categories: string[];
+  projectsCategories: string[];
 }
 
-const Menu = ({ projectsFilter, categories }: menuPropInterface): JSX.Element => {
+const Menu = ({ projectsFilter, projectsCategories }: menuPropInterface): JSX.Element => {
   return (
     <S.Cont className='Menu__Cont'>
-      {categories.map((category: string, index: number): JSX.Element => {
+      {projectsCategories.map((category: string, index: number): JSX.Element => {
         return (
           <S.CategoryButtom
             type='button'

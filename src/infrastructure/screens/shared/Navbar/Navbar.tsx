@@ -1,6 +1,6 @@
 import { MaiLogo } from 'infrastructure/assets/images';
 import { navbarLinksList } from 'infrastructure/assets/data';
-import { DropDown } from 'infrastructure/components';
+import { DrawerNav } from 'infrastructure/components';
 import * as S from './Navbar.style';
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
       </S.LogoCont>
       <S.LinksCont>
         {navbarLinksList.map((link, index: number) => {
-          const { name, url, icon } = link;
+          const { name, url } = link;
           return (
             <S.LinkNav key={index} to={url}>
               {name}
@@ -26,7 +26,7 @@ const Navbar = () => {
           );
         })}
       </S.LinksCont>
-      <DropDown />
+      <DrawerNav />
     </S.Cont>
   );
 };

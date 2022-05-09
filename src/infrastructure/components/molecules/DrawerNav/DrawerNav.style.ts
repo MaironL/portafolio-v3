@@ -1,6 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { FaAlignRight } from 'react-icons/fa';
 
 interface DropDownContentProps {
   show: boolean;
@@ -12,19 +11,6 @@ export const DropDownCont = styled.div`
 
   @media screen and (min-width: 600px) {
     display: none;
-  }
-`;
-
-export const DropDown = styled(FaAlignRight)<DropDownContentProps>`
-  color: ${({ show }) => (show ? 'var(--clr-logo-orange)' : 'var(--clr-primary-5)')};
-  font-size: 36px;
-  margin-right: 20px;
-  transition: var(--fast-transition);
-  z-index: 50;
-
-  &:hover {
-    color: var(--clr-logo-orange);
-    cursor: pointer;
   }
 `;
 
@@ -41,7 +27,7 @@ export const DropDownContent = styled.div<DropDownContentProps>`
   z-index: 10;
   transform: ${({ show }) => (show === true ? 'translateX(0)' : 'translateX(100%)')};
   box-shadow: -1px 0px 1px var(--clr-util-grey);
-  background-color: var(--clr-black);
+  background-color: var(--clr-black-glass);
   transition: var(--fast-transition);
 
   & .active {
@@ -61,11 +47,24 @@ export const link = styled(NavLink)`
   font-weight: 500;
   box-shadow: 0px -0.5px 1px var(--clr-util-grey), -1px 0.5px 1px var(--clr-util-grey);
   transition: var(--transition);
+
+  &::active {
+    color: var(--clr-logo-orange);
+  }
 `;
 
 export const DropDownFocus = styled.div<DropDownContentProps>`
-  background-color: ${({ show }) => (show ? 'hsl(0, 0%, 0%, 10%)' : 'none')};
-  backdrop-filter: ${({ show }) => (show ? 'blur(5px)' : 'none')};
+  ${({ show }) =>
+    show
+      ? css`
+          display: block;
+          background-color: hsl(0, 0%, 0%, 10%);
+          backdrop-filter: blur(5px);
+        `
+      : css`
+          display: none;
+        `}
+
   position: absolute;
   top: 0;
   left: 0;

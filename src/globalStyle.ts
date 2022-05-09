@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 * Variables
 * ===============
 */
-
+--count: calc(-1rem * 10px);
 /*
 * Logo Orange
 */
@@ -54,6 +54,7 @@ const GlobalStyle = createGlobalStyle`
 --clr-grey-10: hsl(210, 36%, 96%);
 --clr-white: #fff;
 --clr-black: #202020;
+--clr-black-glass: hsl(0, 0%, 13%, 0.90);
 /* 
 * for backgrounds 
 */
@@ -173,12 +174,12 @@ p {
 #root {
   display: grid;
   grid: 
-  [row1-start] "navbar" 10vh  [row1-end]   
-  [row2-start] "main" auto [row2-end]
+  [row1-start] "navbar" 90px  [row1-end]   
+  [row2-start] "main" calc(100vh - 90px) [row2-end]
   / auto ;
-  /* row-gap: 20px; */
   min-height: 100%;
   background-color: var(--clr-bg-2);
+  
 
   @media screen and (min-width:1200px) {
     grid: 
@@ -192,7 +193,7 @@ p {
 
 export const animDiv = styled(animated.div)``;
 
-export const MainHeader = styled(animated.header)`
+export const MainHeader = styled.header`
   width: fit-content;
   margin-top: 5%;
   margin-left: 5%;
@@ -210,7 +211,7 @@ export const MainHeader = styled(animated.header)`
 `;
 
 export const Section = styled.section`
-  width: min(1440px, 80%);
+  width: min(1440px, 75%);
   background-color: var(--clr-bg-1);
   padding-top: 10%;
   border-radius: 5px;

@@ -1,6 +1,5 @@
 //Shared Components
 export { default as Navbar } from './shared/Navbar/Navbar';
-export { default as Footer } from './shared/Footer/Footer';
 
 //Screen Compononents
 export { default as Home } from './Home/Home';
