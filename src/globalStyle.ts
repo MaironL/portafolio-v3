@@ -188,6 +188,14 @@ p {
     / 120px auto ;
     
   }
+
+  @media screen and (min-width:1600px) {
+    grid: 
+    [row1-start] "navbar main" 50vh  [row1-end]   
+    [row2-start] "navbar main" 50vh [row2-end]
+    / 10vw auto ;
+    
+  }
 }
 `;
 
