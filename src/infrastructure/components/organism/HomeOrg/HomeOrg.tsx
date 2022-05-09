@@ -69,7 +69,7 @@ const HomeOrg = () => {
             dinamicText={[
               'me gusta el desarrollo web.',
               'actualmente resido en Venezuela.',
-              'me gusta crear y a prender cosas nuevas.',
+              'me gusta crear y aprender cosas nuevas.',
               'escucho rock (80s, 90s) cuando programo.',
               'me gusta ir a la playa.',
             ]}

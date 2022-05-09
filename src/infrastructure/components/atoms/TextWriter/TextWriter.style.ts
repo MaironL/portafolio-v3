@@ -75,6 +75,11 @@ export const dynamicText = styled.span`
     animation: textTyping 6s steps(40) infinite;
 
     @keyframes textTyping {
+      0% {
+        left: 0%;
+        margin: 0px;
+      }
+
       50% {
         left: 100%;
         margin: 0 -35px 0 35px;
