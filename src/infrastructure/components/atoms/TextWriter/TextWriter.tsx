@@ -1,7 +1,7 @@
 import * as S from './TextWriter.style';
 
 interface TextWriterProps {
-  staticText: string;
+  staticText?: string;
   dinamicText: string[];
 }
 

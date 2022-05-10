@@ -65,13 +65,12 @@ const HomeOrg = () => {
             </S.SubTitleWord>
           </S.Subtitle>
           <TextWriter
-            staticText='Y'
             dinamicText={[
-              'me gusta el desarrollo web.',
-              'actualmente resido en Venezuela.',
-              'me gusta crear y aprender cosas nuevas.',
-              'escucho rock (80s, 90s) cuando programo.',
-              'me gusta ir a la playa.',
+              'Me gusta el desarrollo web.',
+              'Actualmente resido en Venezuela.',
+              'Me gusta crear y aprender cosas nuevas.',
+              'Escucho rock (80s, 90s) cuando programo.',
+              'Me gusta ir a la playa.',
             ]}
           />
           <S.LinkTo to='/Projects'>
