@@ -26,7 +26,7 @@ export const VerticalLine = styled.div`
   width: 2px;
 
   @media screen and (min-height: 280px) {
-    height: 50px;
+    height: 10px;
   }
 
   @media screen and (min-height: 320px) {
@@ -35,10 +35,6 @@ export const VerticalLine = styled.div`
 
   @media screen and (min-height: 420px) {
     height: 200px;
-  }
-
-  @media screen and (max-width: 360px) {
-    height: 30px;
   }
 `;
 
