@@ -41,9 +41,8 @@ export const LogoLink = styled(Link)``;
 
 export const Logo = styled.img`
   max-height: 100%;
-  width: 80px;
+  width: 100px;
   display: block;
-  image-rendering: crisp-edges;
   image-rendering: crisp-edges;
   image-rendering: -webkit-optimize-contrast;
   transition: var(--fast-transition);
