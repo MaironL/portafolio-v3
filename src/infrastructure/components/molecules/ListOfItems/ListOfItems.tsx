@@ -11,7 +11,7 @@ const ListOfItems = ({ projectsFiltered }: ListOfItemsProps) => {
     <S.Cont>
       <Fade cascade damping={0.2} triggerOnce>
         {projectsFiltered.map((project, index: number) => {
-          const { title, img, desc, link } = project;
+          const { title, img, link } = project;
           return (
             <S.ProjectCont key={index}>
               <S.ProjectImg src={img} alt={title} />
