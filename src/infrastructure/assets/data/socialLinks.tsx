@@ -1,4 +1,4 @@
-import { GitHub, linkedin, cv } from 'infrastructure/assets/images';
+import { GitHub, linkedin } from 'infrastructure/assets/images';
 
 export interface SocialLinks {
   href: string;
