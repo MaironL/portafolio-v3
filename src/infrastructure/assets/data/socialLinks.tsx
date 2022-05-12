@@ -1,4 +1,4 @@
-import { GitHub, linkedin } from 'infrastructure/assets/images';
+import { GitHub, linkedin, cv } from 'infrastructure/assets/images';
 
 export interface SocialLinks {
   href: string;
@@ -17,11 +17,11 @@ export const socialLinksList: SocialLinks[] = [
     src: linkedin,
     alt: 'linkedin Link',
   },
-  // {
-  //   href: 'https://drive.google.com/file/d/1N0A5O_XfZ-T4O3tt6zd0hqKHouLRqkBO/view',
-  //   src: cv,
-  //   alt: 'Resume Link',
-  // },
+  {
+    href: 'https://drive.google.com/file/d/1lJOLnBvJ-8HfsthBsuwQ6jG7j8Uxdrtg/view?usp=sharing',
+    src: cv,
+    alt: 'Resume Link',
+  },
 ];
 
 export default socialLinksList;
