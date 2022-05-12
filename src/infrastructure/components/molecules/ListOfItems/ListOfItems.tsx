@@ -8,24 +8,26 @@ interface ListOfItemsProps {
 
 const ListOfItems = ({ projectsFiltered }: ListOfItemsProps) => {
   return (
-    <S.List className='ListOfItems__List'>
-      <Fade cascade damping={0.4} triggerOnce>
+    <S.Cont>
+      <Fade cascade damping={0.2} triggerOnce>
         {projectsFiltered.map((project, index: number) => {
           const { title, img, desc, link } = project;
           return (
-            <S.ItemCont key={index} className='ListOfItems__ItemCont' href={link} target='_blank'>
-              <S.Item src={img} alt={title} className='ListOfItems__Item' />
-              <S.ItemInfo className='ListOfItems__ItemInfo'>
-                <header>
-                  <h3>{title}</h3>
-                </header>
-                <p>{desc}</p>
-              </S.ItemInfo>
-            </S.ItemCont>
+            <S.ProjectCont key={index}>
+              <S.ProjectImg src={img} alt={title} />
+              {title !== 'In progress' && (
+                <S.ProjectInfo>
+                  <S.ProjectInfoTitle>{title}</S.ProjectInfoTitle>
+                  <S.ProjectInfoViewMore href={link} target='_blank'>
+                    <S.ProjectInfoViewMoreText>Ver más</S.ProjectInfoViewMoreText>
+                  </S.ProjectInfoViewMore>
+                </S.ProjectInfo>
+              )}
+            </S.ProjectCont>
           );
         })}
       </Fade>
-    </S.List>
+    </S.Cont>
   );
 };
 

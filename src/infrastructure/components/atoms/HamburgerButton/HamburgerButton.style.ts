@@ -12,7 +12,7 @@ export const Hamburger = styled.div<HamburgerButtonProps>`
   width: 60px;
   height: 60px;
   margin-right: 20px;
-  z-index: 50;
+  z-index: 150;
   cursor: pointer;
   transition: var(--slow-transition);
   ${({ show }) =>

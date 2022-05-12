@@ -2,6 +2,7 @@
 export { default as MaiLogo } from './logos/logo.png';
 export { default as GitHub } from './logos/GitHub.svg';
 export { default as linkedin } from './logos/linkedin.svg';
+export { default as cv } from './logos/cv.svg';
 
 //Ilustrations
 export { default as homeIlust } from './ilustrations/homeIlustration.svg';
@@ -13,6 +14,7 @@ export { default as fyloLP } from './projectsPreview/fyloDTLP-preview.png';
 export { default as todo } from './projectsPreview/todo-preview.png';
 export { default as urlShortening } from './projectsPreview/urlShortening-preview.png';
 export { default as menuCreator } from './projectsPreview/menuCreator-preview.png';
+export { default as inProgress } from './projectsPreview/inProgress-preview.png';
 
 //Skills logos
 export { default as figma } from './skillsLogos/figmaLogo.png';

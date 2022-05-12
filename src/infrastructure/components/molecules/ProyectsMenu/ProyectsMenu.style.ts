@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Cont = styled.nav`
+  background-color: var(--clr-black);
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 5%;
-
-  @media screen and (min-width: 600px) {
-    margin-bottom: 4%;
-  }
+  padding: 15px 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 1px 0.5px var(--clr-bg-1);
 `;
 
 export const CategoryButtom = styled.button`

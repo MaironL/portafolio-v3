@@ -1,7 +1,22 @@
 import styled from 'styled-components';
 import { MainHeader } from 'globalStyle';
 
-export const Header = styled(MainHeader)``;
+export const Header = styled(MainHeader)`
+  position: relative;
+
+  & h1 {
+    &::after {
+      content: 'Contacto';
+      z-index: -1;
+      position: absolute;
+      top: -90px;
+      left: 0px;
+      font-size: 200px;
+      text-shadow: -10px -30px 40px #252526;
+      color: var(--clr-bg-2);
+    }
+  }
+`;
 
 export const ConfirmCont = styled.div`
   display: grid;
@@ -44,7 +59,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: min(400px, 70vw);
+  width: min(500px, 90%);
 `;
 
 export const Field = styled.div`
@@ -124,6 +139,8 @@ export const TextArea = styled.textarea<ValProps>`
   width: 100%;
   border-right: ${(props) => (props.Error ? '4px solid rgba(240, 52, 43, 0.8)' : null)};
   box-shadow: ${(props) => (props.Error ? '-4px 5px 12px -3px rgba(240, 52, 43, 0.3)' : null)};
+  margin-bottom: 20px;
+  resize: none;
 
   &:focus {
     border: 1px solid var(--clr-primary-5);

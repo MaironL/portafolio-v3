@@ -1,4 +1,11 @@
-import { fyloLP, blogrLP, todo, urlShortening, menuCreator } from 'infrastructure/assets/images';
+import {
+  fyloLP,
+  blogrLP,
+  todo,
+  urlShortening,
+  menuCreator,
+  inProgress,
+} from 'infrastructure/assets/images';
 
 export interface Projects {
   title: string;
@@ -10,10 +17,10 @@ export interface Projects {
 
 export const ProjectsList: Projects[] = [
   {
-    title: 'Fylo dark theme landing page',
+    title: 'Fylo landing page',
     category: 'HTML/CSS',
     img: fyloLP,
-    desc: 'Landing page desarrollada mediante el uso de HTML/CSS, la metodologia BEM y SASS',
+    desc: 'Landing page desarrollada mediante el uso de HTML/CSS, la metodología  BEM y SASS',
     link: 'https://fylo-dark-theme-ml.netlify.app/',
   },
   {
@@ -27,22 +34,29 @@ export const ProjectsList: Projects[] = [
     title: 'Todo App',
     category: 'REACT.JS',
     img: todo,
-    desc: 'Esta aplicacion es el clasico Todo, pero con Tema(claro/oscuro), drag and drop, fue desarrollada con React, Tailwind. Aparte de esto, desarrolle una API REST con Node, Express, MongoDB y Mongoose, para una Authentication con JWT mediante uso de access token, refresh token, y autorizacion por roles',
+    desc: 'Esta aplicación es el clásico Todo, pero con Tema(claro/oscuro), y drag and drop. Fue desarrollada con React y Tailwind. Se sumó la integración de una API REST personal creada con Express y MongoDB, para una Autenticación con JWT con access token y cookie, y autorización por roles',
     link: 'https://todo-ml.netlify.app/',
   },
   {
     title: 'URL Shortener',
     category: 'REACT.JS',
     img: urlShortening,
-    desc: 'Esta aplicacion permite al usuario generar una URL corta, con el fin de poder compartir una URL con sus amigos, fue desarrollada con React, styled components, axios y la API SHRTCODE',
+    desc: 'Esta aplicación permite al usuario generar una URL corta, con el fin de poder compartir una URL con sus amigos, fue desarrollada con React, styled components, axios y la API SHRTCODE',
     link: 'https://link-shortener-ml.netlify.app/',
   },
   {
-    title: 'MenuApp',
+    title: 'Menú App',
     category: 'REACT.JS',
     img: menuCreator,
-    desc: 'Este es un proyecto personal, de una aplicacion para crear menus, hace peticiones a una API externa para buscar platillos, y cuenta con una API personal en Node Express para la autenticacion.',
+    desc: 'Este es un proyecto personal, de una aplicación para crear menús, hace peticiones a una API externa para buscar platillos, y cuenta con una API personal en Node Express para la autenticación.',
     link: 'https://menuapp-ml.netlify.app/',
+  },
+  {
+    title: 'In progress',
+    category: 'REACT.JS',
+    img: inProgress,
+    desc: '',
+    link: '',
   },
 ];
 

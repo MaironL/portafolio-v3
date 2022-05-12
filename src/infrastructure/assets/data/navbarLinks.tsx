@@ -13,7 +13,7 @@ export const navbarLinksList: NavbarLinks[] = [
     url: '/Projects',
   },
   {
-    name: 'SOBRE MI',
+    name: 'SOBRE MÍ',
     url: '/About',
   },
   {

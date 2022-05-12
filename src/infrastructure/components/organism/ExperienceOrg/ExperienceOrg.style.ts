@@ -6,7 +6,7 @@ export const Header = styled(MainHeader)`
 
   & h1 {
     &::after {
-      content: 'Proyectos';
+      content: 'Experiencia';
       z-index: -1;
       position: absolute;
       top: -90px;
@@ -18,6 +18,10 @@ export const Header = styled(MainHeader)`
   }
 `;
 
-export const ItemsCont = styled(Section)`
-  background: transparent;
+export const JobsCont = styled(Section)`
+  padding: 50px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 `;

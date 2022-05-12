@@ -7,15 +7,10 @@ interface menuPropInterface {
 
 const Menu = ({ jobsFilter, aboutCategories }: menuPropInterface) => {
   return (
-    <S.Cont className='Menu__Cont'>
+    <S.Cont>
       {aboutCategories.map((category, index: number) => {
         return (
-          <S.CategoryButtom
-            type='button'
-            key={index}
-            onClick={() => jobsFilter(category)}
-            className='Menu__CategoryButtom'
-          >
+          <S.CategoryButtom key={index} onClick={() => jobsFilter(category)}>
             {category}
           </S.CategoryButtom>
         );

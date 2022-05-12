@@ -24,7 +24,7 @@ export const DropDownContent = styled.div<DropDownContentProps>`
   top: 0px;
   width: 62vw;
   height: 100vh;
-  z-index: 10;
+  z-index: 100;
   transform: ${({ show }) => (show === true ? 'translateX(0)' : 'translateX(100%)')};
   box-shadow: -1px 0px 1px var(--clr-util-grey);
   background-color: var(--clr-black-glass);
@@ -36,7 +36,7 @@ export const DropDownContent = styled.div<DropDownContentProps>`
   }
 `;
 
-export const link = styled(NavLink)`
+export const Link = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,4 +70,32 @@ export const DropDownFocus = styled.div<DropDownContentProps>`
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 95;
+`;
+
+export const SocialCont = styled.aside`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 50px;
+`;
+
+export const SocialLink = styled.a`
+  display: block;
+`;
+
+export const SocialLinkImg = styled.img`
+  width: 25px;
+  height: auto;
+  image-rendering: crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  transition: var(--fast-transition);
+
+  &:hover {
+    transform: scale(1.1);
+    filter: invert(49%) sepia(67%) saturate(429%) hue-rotate(352deg) brightness(95%) contrast(85%)
+      drop-shadow(5px 5px 5px rgb(0 0 0 / 0.4));
+  }
 `;

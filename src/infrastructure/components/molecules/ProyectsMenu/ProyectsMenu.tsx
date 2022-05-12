@@ -5,17 +5,12 @@ interface menuPropInterface {
   projectsCategories: string[];
 }
 
-const Menu = ({ projectsFilter, projectsCategories }: menuPropInterface): JSX.Element => {
+const Menu = ({ projectsFilter, projectsCategories }: menuPropInterface) => {
   return (
-    <S.Cont className='Menu__Cont'>
-      {projectsCategories.map((category: string, index: number): JSX.Element => {
+    <S.Cont>
+      {projectsCategories.map((category, index: number): JSX.Element => {
         return (
-          <S.CategoryButtom
-            type='button'
-            key={index}
-            onClick={() => projectsFilter(category)}
-            className='Menu__CategoryButtom'
-          >
+          <S.CategoryButtom key={index} onClick={() => projectsFilter(category)}>
             {category}
           </S.CategoryButtom>
         );

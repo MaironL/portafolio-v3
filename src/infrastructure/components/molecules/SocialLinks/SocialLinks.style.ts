@@ -2,16 +2,20 @@ import styled from 'styled-components';
 
 export const SocialCont = styled.aside`
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
-  right: 1%;
+  right: 2.5%;
   bottom: 0%;
   width: 50px;
   padding: 10px 1px 0 1px;
   border-radius: 35px;
 
   @media screen and (min-width: 600px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
     right: 5%;
   }
 `;

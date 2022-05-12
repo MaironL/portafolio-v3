@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 * Variables
 * ===============
 */
---count: calc(-1rem * 10px);
+
 /*
 * Logo Orange
 */
@@ -91,6 +91,7 @@ const GlobalStyle = createGlobalStyle`
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 } 
 
 :root {
@@ -203,8 +204,8 @@ export const animDiv = styled(animated.div)``;
 
 export const MainHeader = styled.header`
   width: fit-content;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 2.5%;
+  margin-top: 50px;
 
   & h1 {
     font-size: 2.65rem;
@@ -213,21 +214,24 @@ export const MainHeader = styled.header`
 
   & hr {
     border: solid 1px var(--clr-primary-5);
-    margin-bottom: max(80px, 12vh);
+    margin-bottom: 40px;
     max-width: 100%;
   }
 `;
 
 export const Section = styled.section`
-  width: min(1440px, 75%);
   background-color: var(--clr-bg-1);
-  padding-top: 10%;
   border-radius: 5px;
-  margin: 0 auto max(80px, 12vh) auto;
+  margin: 0 auto max(80px, 8vh) auto;
   padding-bottom: 30px;
+  z-index: 9;
 
   @media screen and (min-width: 600px) {
-    padding-top: 8%;
+    width: min(75vw, 100%);
+  }
+
+  @media screen and (min-width: 900px) {
+    width: min(900px, 80%);
   }
 `;
 

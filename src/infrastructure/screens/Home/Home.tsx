@@ -1,6 +1,13 @@
 import { useEffect } from 'react';
 import * as S from './Home.style';
-import { SocialLinks, HomeOrg, ProjectsOrg, AboutOrg, ContactOrg } from 'infrastructure/components';
+import {
+  SocialLinks,
+  HomeOrg,
+  ProjectsOrg,
+  AboutOrg,
+  ExperienceOrg,
+  ContactOrg,
+} from 'infrastructure/components';
 import { useFormContact } from './homeHooks';
 import { useFilterJobs, useFilterProjects } from 'infrastructure/hooks';
 
@@ -27,12 +34,15 @@ const Home = () => {
         />
       </S.ProjecsSection>
       <S.AboutSection>
-        <AboutOrg
+        <AboutOrg />
+      </S.AboutSection>
+      <S.ExperienceSection>
+        <ExperienceOrg
           jobsFilter={jobsFilter}
           aboutCategories={aboutCategories}
           jobsFiltered={jobsFiltered}
         />
-      </S.AboutSection>
+      </S.ExperienceSection>
       <S.ContactSection>
         <ContactOrg
           handleSubmit={handleSubmit}

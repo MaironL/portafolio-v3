@@ -2,19 +2,23 @@ import styled from 'styled-components';
 
 export const Cont = styled.main`
   grid-area: main;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 2.5%;
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--clr-bg-2);
+    background-color: transparent;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    background-color: hsl(0, 0%, 100%, 0.2);
+    outline: 1px solid hsl(0, 0%, 100%, 0.2);
   }
 
   &::-webkit-scrollbar-thumb:hover {
