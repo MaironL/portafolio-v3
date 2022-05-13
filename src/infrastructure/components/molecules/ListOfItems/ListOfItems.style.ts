@@ -79,8 +79,15 @@ export const ProjectImg = styled.img`
 
   @media screen and (min-width: 600px) {
     image-rendering: crisp-edges;
-    image-rendering: crisp-edges;
+    image-rendering: -moz-auto;
     image-rendering: -webkit-optimize-contrast;
+  }
+
+  @-moz-document url-prefix() {
+    @media screen and (min-width: 600px) {
+      image-rendering: auto;
+      image-rendering: -webkit-optimize-contrast;
+    }
   }
 `;
 
