@@ -21,7 +21,6 @@ const Navbar = () => {
           return (
             <S.LinkNav key={index} to={url}>
               {name}
-              {/* {icon} */}
             </S.LinkNav>
           );
         })}

@@ -25,10 +25,17 @@ export const DropDownContent = styled.div<DropDownContentProps>`
   width: 62vw;
   height: 100vh;
   z-index: 100;
-  transform: ${({ show }) => (show === true ? 'translateX(0)' : 'translateX(100%)')};
   box-shadow: -1px 0px 1px var(--clr-util-grey);
   background-color: var(--clr-black-glass);
   transition: var(--fast-transition);
+  ${({ show }) =>
+    show === true
+      ? css`
+          transform: translateX(0);
+        `
+      : css`
+          transform: translateX(100%);
+        `};
 
   & .active {
     box-shadow: 0px 0px 5px var(--clr-logo-orange);
@@ -54,23 +61,34 @@ export const Link = styled(NavLink)`
 `;
 
 export const DropDownFocus = styled.div<DropDownContentProps>`
-  ${({ show }) =>
-    show
-      ? css`
-          display: block;
-          background-color: hsl(0, 0%, 0%, 10%);
-          backdrop-filter: blur(5px);
-        `
-      : css`
-          display: none;
-        `}
-
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 95;
+  ${({ show }) =>
+    show
+      ? css`
+          display: block;
+          background-color: hsl(0, 0%, 0%, 10%);
+          backdrop-filter: blur(5px);
+          animation: show 0.5s ease-in-out forwards;
+        `
+      : css`
+          display: none;
+          opacity: 0;
+        `}
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const SocialCont = styled.aside`

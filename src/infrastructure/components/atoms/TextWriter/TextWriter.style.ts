@@ -85,13 +85,12 @@ export const dynamicText = styled.span`
     content: '';
     position: absolute;
     left: 0;
-    top: 0px;
-    height: 40px;
+    top: 0;
+    height: 100%;
     width: 90vw;
     background-color: var(--clr-bg-2);
     border-left: 2px solid var(--clr-primary-5);
     animation: textTyping 6s steps(31) infinite;
-
     @keyframes textTyping {
       0% {
         left: 0%;
@@ -109,8 +108,22 @@ export const dynamicText = styled.span`
         border-left: 2px solid var(--clr-primary-5);
       }
 
+      80% {
+        left: 65vw;
+        margin: 0 -35px 0 35px;
+        border-left: 2px solid var(--clr-logo-orange);
+      }
+
+      90% {
+        left: 0;
+        margin: 0 -35px 0 0px;
+        border-left: 30px solid var(--clr-logo-orange);
+      }
+
       100% {
-        border-left: 20px solid var(--clr-logo-orange);
+        left: 0;
+        margin: 0 -35px 0 0px;
+        border-left: 0px solid var(--clr-logo-orange);
       }
     }
   }
@@ -121,7 +134,7 @@ export const dynamicText = styled.span`
       position: absolute;
       left: 0;
       bottom: -5px;
-      height: 28px;
+      height: 100%;
       width: 100%;
       background-color: var(--clr-bg-2);
       border-left: 2px solid var(--clr-primary-5);
@@ -144,8 +157,22 @@ export const dynamicText = styled.span`
           border-left: 2px solid var(--clr-primary-5);
         }
 
+        80% {
+          left: 100%;
+          margin: 0 -35px 0 35px;
+          border-left: 2px solid var(--clr-logo-orange);
+        }
+
+        90% {
+          left: 0;
+          margin: 0 -35px 0 0px;
+          border-left: 30px solid var(--clr-logo-orange);
+        }
+
         100% {
-          border-left: 20px solid var(--clr-logo-orange);
+          left: 0;
+          margin: 0 -35px 0 0px;
+          border-left: 0px solid var(--clr-logo-orange);
         }
       }
     }
