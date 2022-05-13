@@ -41,11 +41,11 @@ export const LogoLink = styled(Link)``;
 
 export const Logo = styled.img`
   max-height: 100%;
-  width: 100px;
+  width: 80px;
   display: block;
   image-rendering: crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  transition: var(--fast-transition);
+  transition: var(--slow-transition);
 
   &:hover {
     filter: hue-rotate(180deg) drop-shadow(0px 0px 3px var(--clr-logo-orange));
