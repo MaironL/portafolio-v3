@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { animated } from 'react-spring';
 
 const GlobalStyle = createGlobalStyle`
 
