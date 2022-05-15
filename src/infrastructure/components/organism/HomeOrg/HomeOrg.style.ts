@@ -83,7 +83,8 @@ export const Title = styled.h1`
 export const Letter = styled.span`
   display: block;
   transition: var(--fast-transition);
-  text-shadow: -5px 4px 0 var(--clr-bg-1);
+  text-shadow: -1px 1px var(--clr-bg-1), -2px 2px var(--clr-bg-1), -3px 3px var(--clr-bg-1),
+    -4px 4px var(--clr-bg-1), -5px 5px var(--clr-bg-1);
 
   &:hover {
     color: #de7310;
