@@ -4,10 +4,6 @@ export const Cont = styled.main`
   grid-area: main;
   overflow-y: auto;
 
-  @media screen and (min-width: 900px) {
-    scroll-snap-type: y proximity;
-  }
-
   &::-webkit-scrollbar {
     width: 2px;
   }
@@ -23,6 +19,10 @@ export const Cont = styled.main`
 
   &::-webkit-scrollbar-thumb:hover {
     background: var(--clr-grey-7);
+  }
+
+  @media screen and (min-width: 900px) {
+    scroll-snap-type: y proximity;
   }
 `;
 

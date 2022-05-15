@@ -12,14 +12,14 @@ export const Cont = styled.nav`
 `;
 
 export const CategoryButtom = styled.button`
-  font-size: 0.9rem;
-  font-family: inherit;
-  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Righteous', cursive;
+  font-weight: 500;
   border-color: transparent;
   background-color: transparent;
   color: var(--clr-grey-9);
-  transition: var(--fast-transition);
   cursor: pointer;
+  transition: var(--fast-transition);
 
   &:hover {
     color: var(--clr-primary-5);

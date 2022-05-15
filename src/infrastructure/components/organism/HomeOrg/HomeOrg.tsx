@@ -1,5 +1,5 @@
 import * as S from './HomeOrg.style';
-import { TextWriter, AtentionButton } from 'infrastructure/components';
+import { TextWriter, AtentionButton, JellowText } from 'infrastructure/components';
 import { Bounce, Fade } from 'react-awesome-reveal';
 
 const HomeOrg = () => {
@@ -12,55 +12,123 @@ const HomeOrg = () => {
           </S.Presentation>
           <S.Title>
             <S.TitleWord>
-              <Bounce triggerOnce damping={0.1} delay={500} cascade>
-                <S.Letter>M</S.Letter>
-                <S.Letter>a</S.Letter>
-                <S.Letter>i</S.Letter>
-                <S.Letter>r</S.Letter>
-                <S.Letter>o</S.Letter>
-                <S.Letter>n</S.Letter>
+              <Bounce triggerOnce damping={0.1} delay={300} cascade>
+                <JellowText>
+                  <S.Letter>M</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>a</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>i</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>r</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>o</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>n</S.Letter>
+                </JellowText>
               </Bounce>
             </S.TitleWord>
             <S.TitleWord>
               <Bounce triggerOnce damping={0.1} delay={1000} cascade>
-                <S.Letter>R</S.Letter>
-                <S.Letter>o</S.Letter>
-                <S.Letter>m</S.Letter>
-                <S.Letter>e</S.Letter>
-                <S.Letter>r</S.Letter>
-                <S.Letter>o</S.Letter>
-                <S.Letter>,</S.Letter>
+                <JellowText>
+                  <S.Letter>R</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>o</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>m</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>e</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>r</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>o</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>,</S.Letter>
+                </JellowText>
               </Bounce>
             </S.TitleWord>
           </S.Title>
           <S.Subtitle>
             <S.SubTitleWord>
               <Bounce triggerOnce damping={0.1} delay={800} cascade>
-                <S.Letter>D</S.Letter>
-                <S.Letter>e</S.Letter>
-                <S.Letter>s</S.Letter>
-                <S.Letter>a</S.Letter>
-                <S.Letter>r</S.Letter>
-                <S.Letter>r</S.Letter>
-                <S.Letter>o</S.Letter>
-                <S.Letter>l</S.Letter>
-                <S.Letter>l</S.Letter>
-                <S.Letter>a</S.Letter>
-                <S.Letter>d</S.Letter>
-                <S.Letter>o</S.Letter>
-                <S.Letter>r</S.Letter>
+                <JellowText>
+                  <S.Letter>D</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>e</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>s</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>a</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>r</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>r</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>o</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>l</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>l</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>a</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>d</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>o</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>r</S.Letter>
+                </JellowText>
               </Bounce>
             </S.SubTitleWord>
             <S.SubTitleWord>
               <Bounce triggerOnce damping={0.1} delay={2000} cascade>
-                <S.Letter>F</S.Letter>
-                <S.Letter>r</S.Letter>
-                <S.Letter>o</S.Letter>
-                <S.Letter>n</S.Letter>
-                <S.Letter>t</S.Letter>
-                <S.Letter>e</S.Letter>
-                <S.Letter>n</S.Letter>
-                <S.Letter>d</S.Letter>
+                <JellowText>
+                  <S.Letter>F</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>r</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>o</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>n</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>t</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>e</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>n</S.Letter>
+                </JellowText>
+                <JellowText>
+                  <S.Letter>d</S.Letter>
+                </JellowText>
               </Bounce>
             </S.SubTitleWord>
           </S.Subtitle>

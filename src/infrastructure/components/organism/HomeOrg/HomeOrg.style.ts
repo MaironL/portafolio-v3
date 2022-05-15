@@ -55,6 +55,7 @@ export const Title = styled.h1`
   color: #eaeaea;
   font-family: 'Righteous', cursive;
   line-height: 0.7;
+  letter-spacing: 4px;
   margin-bottom: 0px;
 
   @media screen and (min-width: 600px) {
@@ -67,41 +68,26 @@ export const Title = styled.h1`
     font-size: 5rem;
   }
 
-  & div:nth-of-type(1) div:nth-of-type(1) {
+  & div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) {
     color: var(--clr-primary-5);
+  }
+
+  & div:nth-of-type(2) div:nth-of-type(1) div:nth-of-type(1) span {
+    color: #de7310;
+    transition: var(--fast-transition);
+    &:hover {
+      color: var(--clr-primary-5);
+    }
   }
 `;
 
 export const Letter = styled.span`
   display: block;
   transition: var(--fast-transition);
+  text-shadow: -5px 4px 0 var(--clr-bg-1);
 
   &:hover {
     color: #de7310;
-    animation: jello-horizontal 0.6s both;
-    @keyframes jello-horizontal {
-      0% {
-        transform: scale3d(1, 1, 1);
-      }
-      30% {
-        transform: scale3d(1.25, 0.75, 1);
-      }
-      40% {
-        transform: scale3d(0.75, 1.25, 1);
-      }
-      50% {
-        transform: scale3d(1.15, 0.85, 1);
-      }
-      65% {
-        transform: scale3d(0.95, 1.05, 1);
-      }
-      75% {
-        transform: scale3d(1.05, 0.95, 1);
-      }
-      100% {
-        transform: scale3d(1, 1, 1);
-      }
-    }
   }
 `;
 
@@ -128,6 +114,7 @@ export const Subtitle = styled.h2`
   font-family: 'Righteous', cursive;
   line-height: 0.7;
   margin-bottom: 0px;
+  letter-spacing: 4px;
 
   @media screen and (min-width: 600px) {
     width: auto;

@@ -14,7 +14,7 @@ const ExperienceOrg = ({ jobsFiltered, aboutCategories, jobsFilter }: Experience
     <>
       <Fade direction='left' triggerOnce>
         <S.Header>
-          <h1>Experiencia</h1>
+          <h3>Experiencia</h3>
           <hr />
         </S.Header>
       </Fade>

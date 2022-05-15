@@ -200,14 +200,12 @@ p {
 }
 `;
 
-export const animDiv = styled(animated.div)``;
-
 export const MainHeader = styled.header`
   width: fit-content;
   margin-left: 2.5%;
   margin-top: 50px;
 
-  & h1 {
+  & h3 {
     font-size: 2.65rem;
     color: var(--clr-grey-10);
   }

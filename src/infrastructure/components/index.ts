@@ -2,15 +2,17 @@
 export { default as HamburgerButton } from './atoms/HamburgerButton/HamburgerButton';
 export { default as TextWriter } from './atoms/TextWriter/TextWriter';
 export { default as AtentionButton } from './atoms/AtentionButton/AtentionButton';
+export { default as JellowText } from './atoms/JellowText/JellowText';
 
 //Molecules components imports
 export { default as AboutMenu } from './molecules/AboutMenu/AboutMenu';
 export { default as DrawerNav } from './molecules/DrawerNav/DrawerNav';
 export { default as JobsDesc } from './molecules/JobsDesc/JobsDesc';
-export { default as ListOfItems } from './molecules/ListOfItems/ListOfItems';
+export { default as ListOfProjects } from './molecules/ListOfProjects/ListOfProjects';
 export { default as ProyectsMenu } from './molecules/ProyectsMenu/ProyectsMenu';
 export { default as SocialLinks } from './molecules/SocialLinks/SocialLinks';
 export { default as AllSkills } from './molecules/AllSkills/AllSkills';
+export { default as ProjectsDetails } from './molecules/ProjectsDetails/ProjectsDetails';
 
 //organism components exports
 export { default as HomeOrg } from './organism/HomeOrg/HomeOrg';

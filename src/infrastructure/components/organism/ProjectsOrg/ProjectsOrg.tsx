@@ -1,6 +1,6 @@
 import * as S from './ProjectsOrg.style';
 import { Fade } from 'react-awesome-reveal';
-import { ProyectsMenu, ListOfItems } from 'infrastructure/components';
+import { ProyectsMenu, ListOfProjects } from 'infrastructure/components';
 import { Projects } from 'infrastructure/assets/data';
 
 interface ProjectsOrgProps {
@@ -18,13 +18,13 @@ const ProjectsOrg = ({
     <>
       <Fade direction='left' triggerOnce>
         <S.Header>
-          <h1>Proyectos</h1>
+          <h3>Proyectos</h3>
           <hr />
         </S.Header>
       </Fade>
       <S.ItemsCont>
         <ProyectsMenu projectsCategories={projectsCategories} projectsFilter={projectsFilter} />
-        <ListOfItems projectsFiltered={projectsFiltered} />
+        <ListOfProjects projectsFiltered={projectsFiltered} />
       </S.ItemsCont>
     </>
   );

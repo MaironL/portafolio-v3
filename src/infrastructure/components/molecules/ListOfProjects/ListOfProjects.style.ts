@@ -29,7 +29,7 @@ export const ProjectInfo = styled.div`
   z-index: 10;
   text-align: center;
   overflow: hidden;
-  background-color: var(--clr-grey-10);
+  filter: blur(10px);
   transition: var(--slow-transition);
 `;
 
@@ -41,9 +41,9 @@ export const ProjectInfoTitle = styled.h3`
 
 export const ProjectInfoViewMoreText = styled.span`
   display: block;
-  opacity: 0;
+  /* opacity: 0; */
   font-family: righteous;
-  font-size: 1px;
+  font-size: 16px;
   letter-spacing: 2px;
   color: var(--clr-grey-9);
   transition: var(--slow-transition);
@@ -58,24 +58,39 @@ export const ProjectInfoViewMore = styled.a`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
-  width: 1px;
-  height: 1px;
-  background-color: var(--clr-primary-5);
+  border-radius: 5px;
+  padding: 15px 20px;
   cursor: pointer;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 30px 0px rgba(0, 0, 0, 0.7);
-  transition: var(--slow-transition);
-
-  &:hover {
-    box-shadow: inset 0 0 35px 10px var(--clr-logo-orange), 0px 0px 30px 0px rgba(0, 0, 0, 0.7);
-  }
+  background-color: var(--clr-primary-5);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7);
 `;
 
 export const ProjectImg = styled.img`
   max-width: 100%;
   height: auto;
+  opacity: 100%;
+  filter: blur(0px);
+  transition: var(--slow-transition);
+
+  @media screen and (min-width: 600px) {
+    image-rendering: crisp-edges;
+    image-rendering: -moz-auto;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  @-moz-document url-prefix() {
+    @media screen and (min-width: 600px) {
+      image-rendering: auto;
+      image-rendering: -webkit-optimize-contrast;
+    }
+  }
+`;
+
+export const ProjectInProcessImg = styled.img`
+  max-width: 100%;
+  height: auto;
+  opacity: 100%;
   transition: var(--fast-transition);
-  opacity: 90%;
 
   @media screen and (min-width: 600px) {
     image-rendering: crisp-edges;
@@ -96,22 +111,25 @@ export const ProjectCont = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-grey-10);
+  transition: var(--fast-transition);
 
   &:hover ${ProjectInfo} {
     opacity: 1;
+    filter: blur(0px);
   }
-
+  /* 
   &:hover ${ProjectInfoViewMore} {
     width: 90px;
     height: 90px;
-  }
-
-  &:hover ${ProjectInfoViewMoreText} {
-    font-size: 16px;
-    opacity: 100%;
-  }
-
-  /* &:hover ${ProjectImg} {
-    opacity: 95%;
   } */
+
+  /* &:hover ${ProjectInfoViewMoreText} {
+    opacity: 100%;
+  } */
+
+  &:hover ${ProjectImg} {
+    opacity: 0;
+    filter: blur(10px);
+  }
 `;

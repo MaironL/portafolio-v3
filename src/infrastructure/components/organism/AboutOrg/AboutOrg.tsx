@@ -7,7 +7,7 @@ const AboutOrg = () => {
     <>
       <Fade direction='left' triggerOnce>
         <S.Header>
-          <h1>Sobre mí</h1>
+          <h3>Sobre mí</h3>
           <hr />
         </S.Header>
       </Fade>

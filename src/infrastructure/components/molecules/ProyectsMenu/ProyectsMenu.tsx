@@ -8,7 +8,7 @@ interface menuPropInterface {
 const Menu = ({ projectsFilter, projectsCategories }: menuPropInterface) => {
   return (
     <S.Cont>
-      {projectsCategories.map((category, index: number): JSX.Element => {
+      {projectsCategories.map((category, index: number) => {
         return (
           <S.CategoryButtom key={index} onClick={() => projectsFilter(category)}>
             {category}

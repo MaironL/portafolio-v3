@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { Section, animDiv } from 'globalStyle';
+import { Section } from 'globalStyle';
 
-export const SubtitleCont = styled(animDiv)`
+export const SubtitleCont = styled.div`
   width: fit-content;
   margin: 0 auto;
 
@@ -16,7 +16,7 @@ export const SubtitleCont = styled(animDiv)`
   }
 `;
 
-export const SkillsCont = styled.section`
+export const SkillsCont = styled.div`
   display: flex;
   justify-content: center;
   flex-flow: row wrap;

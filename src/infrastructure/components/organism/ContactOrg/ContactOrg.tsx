@@ -57,7 +57,7 @@ const ContactOrg = ({
     <>
       <Fade direction='left' triggerOnce>
         <S.Header>
-          <h1>Contacto</h1>
+          <h3>Contacto</h3>
           <hr />
         </S.Header>
       </Fade>

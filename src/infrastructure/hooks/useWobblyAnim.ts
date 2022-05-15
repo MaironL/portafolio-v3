@@ -1,6 +1,6 @@
 import { useSpring, config } from 'react-spring';
 
-const useAnimation = () => {
+const useWobblyAnim = () => {
   const fromLeft = useSpring({
     from: { opacity: 0, x: -500 },
     opacity: 1,
@@ -16,4 +16,4 @@ const useAnimation = () => {
   return { fromLeft, fromBottom };
 };
 
-export default useAnimation;
+export default useWobblyAnim;
