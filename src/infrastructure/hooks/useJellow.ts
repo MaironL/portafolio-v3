@@ -20,7 +20,7 @@ const useJellow = ({ timing = 150 }: JellowTextProps) => {
     reset: true,
     reverse: !isJellow,
     config: {
-      tension: 300,
+      tension: 900,
       friction: 10,
     },
   });
