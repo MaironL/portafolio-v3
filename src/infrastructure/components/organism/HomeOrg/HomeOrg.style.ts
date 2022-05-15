@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Heading = styled.header`
   display: flex;
@@ -137,4 +136,4 @@ export const SubTitleWord = styled.div`
   }
 `;
 
-export const LinkTo = styled(Link)``;
+export const Link = styled.a``;

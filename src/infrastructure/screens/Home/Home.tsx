@@ -26,7 +26,7 @@ const Home = () => {
       <S.HomeSection>
         <HomeOrg />
       </S.HomeSection>
-      <S.ProjecsSection>
+      <S.ProjecsSection id='projects'>
         <ProjectsOrg
           projectsFilter={projectsFilter}
           projectsCategories={projectsCategories}

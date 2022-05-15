@@ -22,6 +22,7 @@ export const Cont = styled.main`
   }
 
   @media screen and (min-width: 900px) {
+    scroll-behavior: smooth;
     scroll-snap-type: y proximity;
   }
 `;

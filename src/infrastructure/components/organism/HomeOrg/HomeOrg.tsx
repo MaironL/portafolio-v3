@@ -141,9 +141,9 @@ const HomeOrg = () => {
               'Me gusta ir a la playa.',
             ]}
           />
-          <S.LinkTo to='/Projects'>
+          <S.Link href='#projects'>
             <AtentionButton size='large' text='Proyectos' />
-          </S.LinkTo>
+          </S.Link>
         </Fade>
       </S.Heading>
     </>
