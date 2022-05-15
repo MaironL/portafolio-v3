@@ -20,9 +20,9 @@ export const Cont = styled.main`
   &::-webkit-scrollbar-thumb:hover {
     background: var(--clr-grey-7);
   }
+  scroll-behavior: smooth;
 
   @media screen and (min-width: 900px) {
-    scroll-behavior: smooth;
     scroll-snap-type: y proximity;
   }
 `;
