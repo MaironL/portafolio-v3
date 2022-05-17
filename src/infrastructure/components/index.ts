@@ -14,6 +14,7 @@ export { default as SocialLinks } from './molecules/SocialLinks/SocialLinks';
 export { default as AllSkills } from './molecules/AllSkills/AllSkills';
 export { default as ProjectsDetails } from './molecules/ProjectsDetails/ProjectsDetails';
 export { default as Carousel } from './molecules/Carousel/Carousel';
+export { default as Description } from './molecules/Description/Description';
 
 //organism components exports
 export { default as HomeOrg } from './organism/HomeOrg/HomeOrg';

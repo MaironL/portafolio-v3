@@ -16,19 +16,20 @@ export const SubtitleCont = styled.div`
   }
 `;
 
+export const SkillsBg = styled(Section)`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 10px 60px;
+  background-color: var(--clr-bg-1);
+`;
+
 export const SkillsCont = styled.div`
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   margin: 0 auto;
-  width: 90%;
-`;
-
-export const SkillsBg = styled(Section)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 10px 60px;
+  width: 100%;
 `;
 
 interface SkillProps {

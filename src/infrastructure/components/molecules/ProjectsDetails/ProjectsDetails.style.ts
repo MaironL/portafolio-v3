@@ -47,6 +47,10 @@ export const Content = styled.div`
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   z-index: 10;
+
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+  }
 `;
 
 export const Close = styled(IoMdClose)`

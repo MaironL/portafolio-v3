@@ -4,7 +4,7 @@ import { skillsList, Skills } from 'infrastructure/assets/data';
 
 const AllSkills = () => {
   return (
-    <div>
+    <>
       <S.SubtitleCont>
         <Fade cascade damping={0.8} triggerOnce direction='down'>
           <h2>Conocimientos</h2>
@@ -26,7 +26,7 @@ const AllSkills = () => {
           </Fade>
         </S.SkillsCont>
       </S.SkillsBg>
-    </div>
+    </>
   );
 };
 

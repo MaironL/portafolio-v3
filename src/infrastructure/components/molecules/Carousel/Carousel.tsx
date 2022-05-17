@@ -6,7 +6,7 @@ interface CarouselProps {
 }
 
 const Carousel = ({ images, title }: CarouselProps) => {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const last = images.length - 1;
@@ -21,7 +21,7 @@ const Carousel = ({ images, title }: CarouselProps) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex + 1);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [activeIndex]);
 

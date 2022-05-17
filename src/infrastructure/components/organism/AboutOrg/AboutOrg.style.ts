@@ -18,18 +18,8 @@ export const Header = styled(MainHeader)`
   }
 `;
 
-export const Description = styled(Section)`
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 50px;
-
-  p {
-    text-align: justify;
-    color: var(--clr-grey-9);
-  }
-
-  @media screen and (min-width: 600px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+export const InnerCont = styled.div`
+  display: flex;
+  flex-flow: column;
+  z-index: 1;
 `;
