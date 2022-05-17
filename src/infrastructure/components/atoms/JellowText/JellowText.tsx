@@ -2,12 +2,13 @@ import { animated } from 'react-spring';
 import { useJellow } from 'infrastructure/hooks';
 
 interface JellowTextProps {
-  jellowTiming?: number;
+  timing?: number;
   children?: React.ReactNode;
+  color?: string;
 }
 
-const JellowText = ({ children, jellowTiming }: JellowTextProps) => {
-  const { styles, trigger } = useJellow({ timing: jellowTiming });
+const JellowText = ({ children, timing, color }: JellowTextProps) => {
+  const { styles, trigger } = useJellow({ timing, color });
 
   return (
     <animated.div onMouseEnter={trigger} style={styles}>

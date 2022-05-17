@@ -4,7 +4,7 @@ import { MainHeader, Section } from 'globalStyle';
 export const Header = styled(MainHeader)`
   position: relative;
 
-  & h1 {
+  & h3 {
     &::after {
       content: 'Proyectos';
       z-index: -1;
@@ -20,4 +20,5 @@ export const Header = styled(MainHeader)`
 
 export const ItemsCont = styled(Section)`
   background: transparent;
+  z-index: 2;
 `;

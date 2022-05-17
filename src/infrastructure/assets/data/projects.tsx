@@ -10,53 +10,67 @@ import {
 export interface Projects {
   title: string;
   category: string;
-  img: string;
+  img: string[];
   desc: string;
-  link: string;
+  liveLink: string;
+  githubLink: string;
+  skills: string[];
 }
 
 export const ProjectsList: Projects[] = [
   {
     title: 'Fylo landing page',
     category: 'HTML/CSS',
-    img: fyloLP,
-    desc: 'Landing page desarrollada mediante el uso de HTML/CSS, la metodología  BEM y SASS',
-    link: 'https://fylo-dark-theme-ml.netlify.app/',
+    img: [fyloLP, fyloLP, fyloLP],
+    desc: 'Landing page Fylo desarrollada con tema oscuro, como desafio de maquetación, siguiento un diseño.',
+    liveLink: 'https://fylo-dark-theme-ml.netlify.app/',
+    githubLink: 'https://github.com/MaironL/Fylo-dark-theme-landing-page',
+    skills: ['HTML', 'CSS', 'JavaScript', 'SASS'],
   },
   {
     title: 'blogr landing page main',
     category: 'HTML/CSS',
-    img: blogrLP,
-    desc: 'Landing page desarrollada mediante el uso de HTML y Tailwind para los estilos',
-    link: 'https://blogr-landing-page-main-ml.netlify.app/',
+    img: [blogrLP, blogrLP, blogrLP],
+    desc: 'Landing page desarrollada como desafio de maquetacion, siguiento un diseño.',
+    liveLink: 'https://blogr-landing-page-main-ml.netlify.app/',
+    githubLink: 'https://github.com/MaironL/blogr-landing-page-main',
+    skills: ['HTML', 'CSS', 'Tailwind'],
   },
   {
     title: 'Todo App',
     category: 'REACT.JS',
-    img: todo,
-    desc: 'Esta aplicación es el clásico Todo, pero con Tema(claro/oscuro), y drag and drop. Fue desarrollada con React y Tailwind. Se sumó la integración de una API REST personal creada con Express y MongoDB, para una Autenticación con JWT con access token y cookie, y autorización por roles',
-    link: 'https://todo-ml.netlify.app/',
+    img: [todo, todo, todo],
+    desc: 'Clasica aplicación de Todo List, cuenta con cambio de tema, drag and drop, filtros, y una API Rest personal para la autenticación, acceso por roles y guardado de tareas.',
+    githubLink: 'https://github.com/MaironL/Todo-App',
+    liveLink: 'https://todo-ml.netlify.app/',
+    skills: ['React', 'Tailwind', 'Express', 'MongoDB'],
   },
   {
     title: 'URL Shortener',
     category: 'REACT.JS',
-    img: urlShortening,
-    desc: 'Esta aplicación permite al usuario generar una URL corta, con el fin de poder compartir una URL con sus amigos, fue desarrollada con React, styled components, axios y la API SHRTCODE',
-    link: 'https://link-shortener-ml.netlify.app/',
+    img: [urlShortening, urlShortening, urlShortening],
+    desc: 'Esta aplicación permite al usuario generar una URL corta, con el fin de poder compartir una URL con sus amigos, se hizo uso de la API SHRTCODE',
+    githubLink: 'https://github.com/MaironL/URLShorteningAPILandingPage',
+    liveLink: 'https://link-shortener-ml.netlify.app/',
+    skills: ['React', 'Styled Components', 'Axios'],
   },
   {
     title: 'Menú App',
     category: 'REACT.JS',
-    img: menuCreator,
-    desc: 'Este es un proyecto personal, de una aplicación para crear menús, hace peticiones a una API externa para buscar platillos, y cuenta con una API personal en Node Express para la autenticación.',
-    link: 'https://menuapp-ml.netlify.app/',
+    img: [menuCreator, menuCreator, menuCreator],
+    desc: 'Aplicación para crear menus personalizados, hace uso de la API Spoonacular para obtener los platillos, y una API Rest personal para la autenticación.',
+    liveLink: 'https://menuapp-ml.netlify.app/',
+    githubLink: 'https://github.com/MaironL/menuApp',
+    skills: ['React', 'Bootstrap', 'Express', 'MongoDB'],
   },
   {
     title: 'In progress',
     category: 'REACT.JS',
-    img: inProgress,
+    img: [inProgress],
     desc: '',
-    link: '',
+    githubLink: '',
+    liveLink: '',
+    skills: [],
   },
 ];
 

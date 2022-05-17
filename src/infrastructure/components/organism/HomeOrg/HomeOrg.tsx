@@ -62,71 +62,71 @@ const HomeOrg = () => {
           <S.Subtitle>
             <S.SubTitleWord>
               <Bounce triggerOnce damping={0.1} delay={800} cascade>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>D</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>e</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>s</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>a</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>r</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>r</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>o</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>l</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>l</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>a</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>d</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>o</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>r</S.Letter>
                 </JellowText>
               </Bounce>
             </S.SubTitleWord>
             <S.SubTitleWord>
               <Bounce triggerOnce damping={0.1} delay={2000} cascade>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>F</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>r</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>o</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>n</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>t</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>e</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>n</S.Letter>
                 </JellowText>
-                <JellowText>
+                <JellowText color='#a9a9a9'>
                   <S.Letter>d</S.Letter>
                 </JellowText>
               </Bounce>

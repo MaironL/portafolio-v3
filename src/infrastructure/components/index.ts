@@ -13,6 +13,7 @@ export { default as ProyectsMenu } from './molecules/ProyectsMenu/ProyectsMenu';
 export { default as SocialLinks } from './molecules/SocialLinks/SocialLinks';
 export { default as AllSkills } from './molecules/AllSkills/AllSkills';
 export { default as ProjectsDetails } from './molecules/ProjectsDetails/ProjectsDetails';
+export { default as Carousel } from './molecules/Carousel/Carousel';
 
 //organism components exports
 export { default as HomeOrg } from './organism/HomeOrg/HomeOrg';

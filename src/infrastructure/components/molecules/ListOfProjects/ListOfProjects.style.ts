@@ -29,19 +29,20 @@ export const ProjectInfo = styled.div`
   z-index: 10;
   text-align: center;
   overflow: hidden;
+
   filter: blur(10px);
   transition: var(--slow-transition);
 `;
 
 export const ProjectInfoTitle = styled.h3`
   font-family: righteous;
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 1.1rem;
   color: var(--clr-grey-2);
 `;
 
 export const ProjectInfoViewMoreText = styled.span`
   display: block;
-  /* opacity: 0; */
   font-family: righteous;
   font-size: 16px;
   letter-spacing: 2px;
@@ -49,14 +50,10 @@ export const ProjectInfoViewMoreText = styled.span`
   transition: var(--slow-transition);
 `;
 
-export const ProjectInfoViewMore = styled.a`
-  display: block;
+export const ProjectInfoViewMore = styled.div`
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   padding: 15px 20px;
@@ -118,15 +115,6 @@ export const ProjectCont = styled.div`
     opacity: 1;
     filter: blur(0px);
   }
-  /* 
-  &:hover ${ProjectInfoViewMore} {
-    width: 90px;
-    height: 90px;
-  } */
-
-  /* &:hover ${ProjectInfoViewMoreText} {
-    opacity: 100%;
-  } */
 
   &:hover ${ProjectImg} {
     opacity: 0;

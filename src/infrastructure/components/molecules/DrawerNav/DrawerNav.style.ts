@@ -34,7 +34,7 @@ export const DropDownContent = styled.div<DropDownContentProps>`
           transform: translateX(0);
         `
       : css`
-          transform: translateX(100%);
+          transform: translateX(105%);
         `};
 
   & .active {

@@ -51,7 +51,7 @@ export const Title = styled.h1`
   display: flex;
   flex-flow: row wrap;
   font-size: 3rem;
-  color: #eaeaea;
+  /* color: #eaeaea; */
   font-family: 'Righteous', cursive;
   line-height: 0.7;
   letter-spacing: 4px;
@@ -67,16 +67,16 @@ export const Title = styled.h1`
     font-size: 5rem;
   }
 
-  & div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) {
+  /*styling letter M*/
+  & div:nth-of-type(1) div:nth-of-type(1) div:nth-of-type(1) span {
     color: var(--clr-primary-5);
+    transition: var(--fast-transition);
   }
 
+  /*styling letter R*/
   & div:nth-of-type(2) div:nth-of-type(1) div:nth-of-type(1) span {
     color: #de7310;
     transition: var(--fast-transition);
-    &:hover {
-      color: var(--clr-primary-5);
-    }
   }
 `;
 
@@ -84,11 +84,7 @@ export const Letter = styled.span`
   display: block;
   transition: var(--fast-transition);
   text-shadow: -1px 1px var(--clr-bg-1), -2px 2px var(--clr-bg-1), -3px 3px var(--clr-bg-1),
-    -4px 4px var(--clr-bg-1), -5px 5px var(--clr-bg-1);
-
-  &:hover {
-    color: #de7310;
-  }
+    -4px 4px var(--clr-bg-1);
 `;
 
 export const TitleWord = styled.div`
@@ -110,7 +106,6 @@ export const Subtitle = styled.h2`
   display: flex;
   flex-flow: row wrap;
   font-size: 1.5rem;
-  color: #a9a9a9;
   font-family: 'Righteous', cursive;
   line-height: 0.7;
   margin-bottom: 0px;

@@ -4,7 +4,7 @@ import { MainHeader, Section } from 'globalStyle';
 export const Header = styled(MainHeader)`
   position: relative;
 
-  & h1 {
+  & h3 {
     &::after {
       content: 'Sobre_Mí';
       z-index: -1;

@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 :root {
-  
 /*
 * =============== 
 * Variables
@@ -221,7 +220,7 @@ export const Section = styled.section`
   border-radius: 5px;
   margin: 0 auto max(80px, 8vh) auto;
   padding-bottom: 30px;
-  z-index: 9;
+  z-index: 1;
 
   @media screen and (min-width: 600px) {
     width: min(75vw, 100%);
