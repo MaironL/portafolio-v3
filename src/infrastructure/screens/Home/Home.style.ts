@@ -21,8 +21,13 @@ export const Cont = styled.main`
     background: var(--clr-grey-7);
   }
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 
   @media screen and (min-width: 900px) {
+    scroll-snap-type: y mandatory;
+  }
+
+  @media screen and (max-height: 699px) {
     scroll-snap-type: y proximity;
   }
 `;
@@ -61,7 +66,7 @@ export const AboutSection = styled.section`
   padding: 0 2.5%;
 
   @media screen and (min-width: 900px) {
-    /* height: max(700px, 100vh); */
+    height: max(800px, 100vh);
     scroll-snap-align: start;
   }
 `;

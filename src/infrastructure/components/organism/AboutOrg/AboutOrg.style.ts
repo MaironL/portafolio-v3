@@ -26,5 +26,12 @@ export const Header = styled(MainHeader)`
 
 export const InnerCont = styled.div`
   display: flex;
-  flex-flow: column;
+  justify-content: center;
+  flex-flow: row wrap;
+
+  @media screen and (min-width: 900px) {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
 `;

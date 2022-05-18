@@ -1,30 +1,27 @@
 import styled, { css } from 'styled-components';
-import { Section } from 'globalStyle';
 
-export const SubtitleCont = styled.div`
-  width: fit-content;
-  margin: 0 auto;
-
-  & h2 {
-    color: var(--clr-grey-9);
-    margin-bottom: max(50px, 10vh);
-  }
-`;
-
-export const SkillsBg = styled(Section)`
+export const SkillsBg = styled.div`
+  z-index: 1;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 50px 10px 60px;
-  background-color: var(--clr-bg-1);
-`;
-
-export const SkillsCont = styled.div`
-  display: flex;
+  align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  margin: 0 auto;
-  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 80px;
+
+  @media screen and (min-width: 600px) {
+    width: max(500px, 80%);
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: clamp(385px, 50%, 80%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 520px;
+  }
 `;
 
 interface SkillProps {
@@ -41,13 +38,13 @@ export const Skill = styled.figure<SkillProps>`
   width: 80px;
   height: 80px;
   padding: 10px;
-  background-color: var(--clr-bg-2);
+  background-color: var(--clr-bg-1);
   border-radius: 50%;
 
   @media screen and (min-width: 600px) {
     margin: 20px;
-    width: 90px;
-    height: 90px;
+    /* width: 80px;
+    height: 80px; */
   }
 
   & img {

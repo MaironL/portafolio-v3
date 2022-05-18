@@ -4,28 +4,19 @@ import { skillsList, Skills } from 'infrastructure/assets/data';
 
 const AllSkills = () => {
   return (
-    <>
-      <S.SubtitleCont>
-        <Fade cascade damping={0.8} triggerOnce direction='down'>
-          <h2>Conocimientos</h2>
-        </Fade>
-      </S.SubtitleCont>
-      <S.SkillsBg>
-        <S.SkillsCont>
-          <Fade cascade damping={0.2} triggerOnce>
-            {skillsList.map((skill: Skills, index: number): JSX.Element => {
-              const { img, name } = skill;
-              return (
-                <S.Skill key={index} name={name}>
-                  <img src={img} alt={name} />
-                  <figcaption>{name}</figcaption>
-                </S.Skill>
-              );
-            })}
-          </Fade>
-        </S.SkillsCont>
-      </S.SkillsBg>
-    </>
+    <S.SkillsBg>
+      <Fade cascade damping={0.2} triggerOnce>
+        {skillsList.map((skill: Skills, index: number): JSX.Element => {
+          const { img, name } = skill;
+          return (
+            <S.Skill key={index} name={name}>
+              <img src={img} alt={name} />
+              <figcaption>{name}</figcaption>
+            </S.Skill>
+          );
+        })}
+      </Fade>
+    </S.SkillsBg>
   );
 };
 

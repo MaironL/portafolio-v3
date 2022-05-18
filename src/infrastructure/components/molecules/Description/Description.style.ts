@@ -1,10 +1,8 @@
-import { Section } from 'globalStyle';
 import styled from 'styled-components';
 
-export const Description = styled(Section)`
-  background-color: var(--clr-bg-1);
-  border-radius: 5px;
-  padding: 50px 20px 30px 20px;
+export const Description = styled.div`
+  width: 100%;
+  padding: 20px 20px 10px 20px;
 
   p {
     text-align: justify;
@@ -12,7 +10,12 @@ export const Description = styled(Section)`
   }
 
   @media screen and (min-width: 600px) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 0px 10px 0px;
+    width: max(450px, 80%);
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 350px;
+    margin-left: 2.5%;
   }
 `;
