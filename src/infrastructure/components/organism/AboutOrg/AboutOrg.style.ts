@@ -27,5 +27,4 @@ export const Header = styled(MainHeader)`
 export const InnerCont = styled.div`
   display: flex;
   flex-flow: column;
-  z-index: 1;
 `;
