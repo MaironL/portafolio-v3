@@ -46,6 +46,8 @@ export const ProjecsSection = styled.section`
   padding: 0 2.5%;
   width: 100%;
 
+  background-color: var(--clr-bg-1);
+
   @media screen and (min-width: 900px) {
     height: max(700px, 100vh);
     scroll-snap-align: start;
@@ -57,9 +59,9 @@ export const AboutSection = styled.section`
   flex-direction: column;
   overflow-x: hidden;
   padding: 0 2.5%;
-  width: 100%;
 
   @media screen and (min-width: 900px) {
+    /* height: max(700px, 100vh); */
     scroll-snap-align: start;
   }
 `;
@@ -70,6 +72,7 @@ export const ExperienceSection = styled.section`
   overflow-x: hidden;
   padding: 0 2.5%;
   width: 100%;
+  background-color: var(--clr-bg-1);
 
   @media screen and (min-width: 900px) {
     height: max(750px, 100vh);

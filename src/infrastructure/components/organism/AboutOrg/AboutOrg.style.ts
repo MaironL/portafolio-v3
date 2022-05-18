@@ -1,10 +1,16 @@
 import styled from 'styled-components';
-import { MainHeader, Section } from 'globalStyle';
+import { MainHeader } from 'globalStyle';
 
 export const Header = styled(MainHeader)`
   position: relative;
 
   & h3 {
+    text-transform: none;
+
+    & div:nth-child(5) {
+      margin-right: 10px;
+    }
+
     &::after {
       content: 'Sobre_Mí';
       z-index: -1;

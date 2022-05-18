@@ -7,6 +7,7 @@ export const Cont = styled.main`
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0 2.5%;
+  background-color: var(--clr-bg-1);
 
   &::-webkit-scrollbar {
     width: 2px;

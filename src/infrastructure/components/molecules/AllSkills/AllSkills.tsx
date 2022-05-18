@@ -8,7 +8,6 @@ const AllSkills = () => {
       <S.SubtitleCont>
         <Fade cascade damping={0.8} triggerOnce direction='down'>
           <h2>Conocimientos</h2>
-          <hr />
         </Fade>
       </S.SubtitleCont>
       <S.SkillsBg>

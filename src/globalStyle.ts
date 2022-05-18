@@ -206,17 +206,18 @@ export const MainHeader = styled.header`
   & h3 {
     font-size: 2.65rem;
     color: var(--clr-grey-10);
+    margin-bottom: 40px;
   }
 
-  & hr {
+  /* & hr {
     border: solid 1px var(--clr-primary-5);
     margin-bottom: 40px;
     max-width: 100%;
-  }
+  } */
 `;
 
 export const Section = styled.section`
-  background-color: var(--clr-bg-1);
+  /* background-color: var(--clr-bg-1); */
   border-radius: 5px;
   margin: 0 auto max(80px, 8vh) auto;
   padding-bottom: 30px;

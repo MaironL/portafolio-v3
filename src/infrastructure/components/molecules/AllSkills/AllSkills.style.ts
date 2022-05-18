@@ -7,12 +7,7 @@ export const SubtitleCont = styled.div`
 
   & h2 {
     color: var(--clr-grey-9);
-  }
-
-  & hr {
-    border: solid 1px var(--clr-primary-5);
     margin-bottom: max(50px, 10vh);
-    max-width: 100%;
   }
 `;
 

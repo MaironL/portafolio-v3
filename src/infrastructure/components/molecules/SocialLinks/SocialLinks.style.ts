@@ -21,8 +21,8 @@ export const SocialCont = styled.aside`
 `;
 
 export const VerticalLine = styled.div`
-  background-color: var(--clr-util-grey);
-  box-shadow: 0 0 5px 1px var(--clr-util-grey);
+  background-color: var(--clr-logo-orange);
+  box-shadow: 0 0 5px 1px var(--clr-logo-orange);
   width: 2px;
 
   @media screen and (min-height: 280px) {
