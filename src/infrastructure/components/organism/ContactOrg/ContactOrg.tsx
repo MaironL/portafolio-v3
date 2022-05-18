@@ -1,7 +1,7 @@
 import * as S from './ContactOrg.style';
 import { Fade } from 'react-awesome-reveal';
 import { msgSendIlust } from 'infrastructure/assets/images';
-import { AtentionButton, JellowText } from 'infrastructure/components';
+import { AtentionButton } from 'infrastructure/components';
 import { FormikErrors, FormikTouched } from 'formik/dist/types';
 
 type formDataInterface = {
@@ -57,16 +57,7 @@ const ContactOrg = ({
     <>
       <Fade direction='left' triggerOnce>
         <S.Header>
-          <h3>
-            <JellowText>C</JellowText>
-            <JellowText>o</JellowText>
-            <JellowText>n</JellowText>
-            <JellowText>t</JellowText>
-            <JellowText>a</JellowText>
-            <JellowText>c</JellowText>
-            <JellowText>t</JellowText>
-            <JellowText>o</JellowText>
-          </h3>
+          <h3>Contacto</h3>
         </S.Header>
       </Fade>
       <S.Form onSubmit={handleSubmit}>

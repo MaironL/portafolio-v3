@@ -5,7 +5,6 @@ export const Header = styled(MainHeader)`
   position: relative;
 
   & h3 {
-    text-transform: none;
     &::after {
       content: 'Contacto';
       z-index: -1;

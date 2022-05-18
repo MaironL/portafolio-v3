@@ -1,11 +1,6 @@
 import * as S from './ProjectsOrg.style';
 import { Fade } from 'react-awesome-reveal';
-import {
-  ProyectsMenu,
-  ListOfProjects,
-  ProjectsDetails,
-  JellowText,
-} from 'infrastructure/components';
+import { ProyectsMenu, ListOfProjects, ProjectsDetails } from 'infrastructure/components';
 import { Projects } from 'infrastructure/assets/data';
 import { useState } from 'react';
 
@@ -32,17 +27,7 @@ const ProjectsOrg = ({
     <>
       <Fade direction='left' triggerOnce>
         <S.Header>
-          <h3>
-            <JellowText>P</JellowText>
-            <JellowText>r</JellowText>
-            <JellowText>o</JellowText>
-            <JellowText>y</JellowText>
-            <JellowText>e</JellowText>
-            <JellowText>c</JellowText>
-            <JellowText>t</JellowText>
-            <JellowText>o</JellowText>
-            <JellowText>s</JellowText>
-          </h3>
+          <h3>Proyectos</h3>
         </S.Header>
       </Fade>
       <S.ItemsCont>
