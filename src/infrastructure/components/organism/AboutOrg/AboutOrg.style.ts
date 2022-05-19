@@ -32,6 +32,6 @@ export const InnerCont = styled.div`
   @media screen and (min-width: 900px) {
     width: 90%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 `;

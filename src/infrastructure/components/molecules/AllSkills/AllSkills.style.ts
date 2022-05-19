@@ -16,7 +16,7 @@ export const SkillsBg = styled.div`
   }
 
   @media screen and (min-width: 900px) {
-    width: clamp(385px, 50%, 80%);
+    width: clamp(385px, 52%, 85%);
   }
 
   @media screen and (min-width: 1200px) {
@@ -42,9 +42,7 @@ export const Skill = styled.figure<SkillProps>`
   border-radius: 50%;
 
   @media screen and (min-width: 600px) {
-    margin: 20px;
-    /* width: 80px;
-    height: 80px; */
+    margin: 20px 10px;
   }
 
   & img {

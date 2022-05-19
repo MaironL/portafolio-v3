@@ -16,6 +16,5 @@ export const Description = styled.div`
 
   @media screen and (min-width: 900px) {
     width: 350px;
-    margin-left: 2.5%;
   }
 `;
